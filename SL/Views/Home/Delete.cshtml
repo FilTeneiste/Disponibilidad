@@ -1,0 +1,992 @@
+﻿@model ML.Entities.Datos_Personales
+
+@{
+    ViewBag.Title = "Delete";
+}
+
+<h2>Delete</h2>
+
+<h3>Are you sure you want to delete this?</h3>
+<div>
+    <h4>Datos_Personales</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Id_Datos_Personales)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Id_Datos_Personales)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Nombre)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Nombre)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.APaterno)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.APaterno)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.AMaterno)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.AMaterno)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Edad)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Edad)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Lugar_de_Nacimiento)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Lugar_de_Nacimiento)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Estado_Civil)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Estado_Civil)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CURP)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CURP)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Direccion)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Direccion)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Numero_Casa)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Numero_Casa)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Numero_Celular)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Numero_Celular)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Nombre_Licenciatura)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Nombre_Licenciatura)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Institucion_Lic)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Institucion_Lic)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Periodo_Lic)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Periodo_Lic)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Año_Titulacion_Lic)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Año_Titulacion_Lic)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Nombre_Maestria)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Nombre_Maestria)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Institucion_Mae)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Institucion_Mae)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Periodo_Mae)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Periodo_Mae)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Año_Titulacion_Mae)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Año_Titulacion_Mae)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Nombre_Doctorado)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Nombre_Doctorado)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Institucion_Doc)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Institucion_Doc)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Periodo_Doc)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Periodo_Doc)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Año_Titulacion_Doc)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Año_Titulacion_Doc)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Nombre_Especializacion)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Nombre_Especializacion)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Institucion_Espe)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Institucion_Espe)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Periodo_Espe)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Periodo_Espe)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Año_Titulacion_Espe)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Año_Titulacion_Espe)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Nombre_Curso)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Nombre_Curso)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Instituto_Curso)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Instituto_Curso)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Horas)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Horas)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Fecha)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Fecha)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Idioma)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Idioma)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Habla)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Habla)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Lee)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Lee)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Escribe)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Escribe)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Dominio)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Dominio)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Actividad_Puesto)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Actividad_Puesto)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Organizacion_Empresa)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Organizacion_Empresa)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Periodo)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Periodo)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Actividad_Puesto2)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Actividad_Puesto2)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Organizacion_Empresa2)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Organizacion_Empresa2)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Periodo2)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Periodo2)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Actividad_Puesto3)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Actividad_Puesto3)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Organizacion_Empresa3)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Organizacion_Empresa3)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Periodo3)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Periodo3)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Actividad_Puesto_Aca)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Actividad_Puesto_Aca)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Institucion_Aca)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Institucion_Aca)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Periodo_Aca)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Periodo_Aca)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Actividad_Puesto_Aca2)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Actividad_Puesto_Aca2)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Institucion_Aca2)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Institucion_Aca2)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Periodo_Aca2)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Periodo_Aca2)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Actividad_Puesto_Aca3)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Actividad_Puesto_Aca3)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Institucion_Aca3)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Institucion_Aca3)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Periodo_Aca3)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Periodo_Aca3)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Ingenieria_Industrial)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Ingenieria_Industrial)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Ingenieria_Sistemas)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Ingenieria_Sistemas)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Tics)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Tics)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Ingenieria_Gestion)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Ingenieria_Gestion)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Ingenieria_Logistica)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Ingenieria_Logistica)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Ingenieria_Industial_Dis)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Ingenieria_Industial_Dis)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Contador)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Contador)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Ingenieria_Mecatronica)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Ingenieria_Mecatronica)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Ingenieria_Gestion_Dis)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Ingenieria_Gestion_Dis)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Ingenieria_Administracion)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Ingenieria_Administracion)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Nombre_Materia_Ant)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Nombre_Materia_Ant)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Carrera_Ant)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Carrera_Ant)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Semestre_Ant)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Semestre_Ant)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Nombre_Materia_Ant2)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Nombre_Materia_Ant2)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Carrera_Ant2)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Carrera_Ant2)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Semestre_Ant2)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Semestre_Ant2)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Nombre_Materia_Ant3)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Nombre_Materia_Ant3)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Carrera_Ant3)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Carrera_Ant3)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Semestre_Ant3)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Semestre_Ant3)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Nombre_Materia_Ant4)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Nombre_Materia_Ant4)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Carrera_Ant4)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Carrera_Ant4)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Semestre_Ant4)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Semestre_Ant4)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Nombre_Materia_Ant5)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Nombre_Materia_Ant5)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Carrera_Ant5)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Carrera_Ant5)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Semestre_Ant5)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Semestre_Ant5)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Nombre_Materia_Ant6)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Nombre_Materia_Ant6)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Carrera_Ant6)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Carrera_Ant6)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Semestre_Ant6)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Semestre_Ant6)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Nombre_Materia_Ant7)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Nombre_Materia_Ant7)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Carrera_Ant7)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Carrera_Ant7)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Semestre_Ant7)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Semestre_Ant7)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Nombre_Materia_Ant8)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Nombre_Materia_Ant8)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Carrera_Ant8)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Carrera_Ant8)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Semestre_Ant8)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Semestre_Ant8)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Nombre_Materia_Ant9)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Nombre_Materia_Ant9)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Carrera_Ant9)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Carrera_Ant9)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Semestre_Ant9)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Semestre_Ant9)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Nombre_Materia_Imp)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Nombre_Materia_Imp)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Carrera_Imp)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Carrera_Imp)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Semestre_Imp)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Semestre_Imp)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Nombre_Materia_Imp2)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Nombre_Materia_Imp2)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Carrera_Imp2)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Carrera_Imp2)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Semestre_Imp2)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Semestre_Imp2)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Nombre_Materia_Imp3)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Nombre_Materia_Imp3)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Carrera_Imp3)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Carrera_Imp3)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Semestre_Imp3)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Semestre_Imp3)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Nombre_Materia_Imp4)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Nombre_Materia_Imp4)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Carrera_Imp4)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Carrera_Imp4)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Semestre_Imp4)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Semestre_Imp4)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Nombre_Materia_Imp5)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Nombre_Materia_Imp5)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Carrera_Imp5)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Carrera_Imp5)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Semestre_Imp5)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Semestre_Imp5)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Nombre_Materia_Imp6)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Nombre_Materia_Imp6)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Carrera_Imp6)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Carrera_Imp6)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Semestre_Imp6)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Semestre_Imp6)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Nombre_Materia_Imp7)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Nombre_Materia_Imp7)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Carrera_Imp7)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Carrera_Imp7)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Semestre_Imp7)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Semestre_Imp7)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Nombre_Materia_Imp8)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Nombre_Materia_Imp8)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Carrera_Imp8)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Carrera_Imp8)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Semestre_Imp8)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Semestre_Imp8)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Nombre_Materia_Imp9)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Nombre_Materia_Imp9)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Carrera_Imp9)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Carrera_Imp9)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Semestre_Imp9)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Semestre_Imp9)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Nombre_Materia_Imp10)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Nombre_Materia_Imp10)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Carrera_Imp10)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Carrera_Imp10)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Semestre_Imp10)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Semestre_Imp10)
+        </dd>
+
+    </dl>
+
+    @using (Html.BeginForm()) {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color">
+            <input type="submit" value="Delete" class="btn btn-default" /> |
+            @Html.ActionLink("Back to List", "Index")
+        </div>
+    }
+</div>

@@ -1,0 +1,47 @@
+﻿@model List<ML.Entities.Datos_Personales>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>LIbro Listado</h2>
+
+
+<hr />
+<table>
+    <thead>
+        <tr>
+            <td>
+                Id_Datos_Personales
+            </td>
+
+            <td>
+                Nombre
+            </td>
+
+            <td>
+                APaterno
+            </td>
+        </tr>
+
+    </thead>
+
+    <tbody>
+        @foreach (var obj in Model)
+        {
+            <tr>
+                <td>
+                    @obj.Id_Datos_Personales
+                </td>
+
+                <td>
+                    @obj.Nombre
+                </td>
+
+                <td>
+                    @obj.APaterno
+                </td>
+            </tr>
+        }
+        </tbody>
+    </table>

@@ -1,0 +1,1185 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="DisponibilidadModel3.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="Datos_Personales">
+          <Key>
+            <PropertyRef Name="Id_Datos_Personales" />
+          </Key>
+          <Property Name="Id_Datos_Personales" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Nombre" Type="varchar" MaxLength="25" Nullable="false" />
+          <Property Name="APaterno" Type="varchar" MaxLength="25" Nullable="false" />
+          <Property Name="AMaterno" Type="varchar" MaxLength="25" Nullable="false" />
+          <Property Name="Edad" Type="int" Nullable="false" />
+          <Property Name="Lugar_de_Nacimiento" Type="varchar" MaxLength="30" Nullable="false" />
+          <Property Name="Estado_Civil" Type="varchar" MaxLength="20" Nullable="false" />
+          <Property Name="CURP" Type="varchar" MaxLength="30" Nullable="false" />
+          <Property Name="Direccion" Type="varchar" MaxLength="100" Nullable="false" />
+          <Property Name="Numero_Casa" Type="varchar" MaxLength="20" />
+          <Property Name="Numero_Celular" Type="varchar" MaxLength="20" />
+          <Property Name="Nombre_Licenciatura" Type="varchar" MaxLength="25" />
+          <Property Name="Institucion_Lic" Type="varchar" MaxLength="30" />
+          <Property Name="Periodo_Lic" Type="int" />
+          <Property Name="Año_Titulacion_Lic" Type="varchar" MaxLength="30" />
+          <Property Name="Nombre_Maestria" Type="varchar" MaxLength="30" />
+          <Property Name="Institucion_Mae" Type="varchar" MaxLength="30" />
+          <Property Name="Periodo_Mae" Type="int" />
+          <Property Name="Año_Titulacion_Mae" Type="varchar" MaxLength="30" />
+          <Property Name="Nombre_Doctorado" Type="varchar" MaxLength="30" />
+          <Property Name="Institucion_Doc" Type="varchar" MaxLength="30" />
+          <Property Name="Periodo_Doc" Type="int" />
+          <Property Name="Años_Titulacion_Doc" Type="varchar" MaxLength="30" />
+          <Property Name="Nombre_Especializacion" Type="varchar" MaxLength="30" />
+          <Property Name="Institucion_Espe" Type="varchar" MaxLength="30" />
+          <Property Name="Periodo_Espe" Type="int" />
+          <Property Name="Año_Titulacion_Espe" Type="varchar" MaxLength="30" />
+          <Property Name="Nombre_Curso" Type="varchar" MaxLength="30" />
+          <Property Name="Institucion_Curso" Type="varchar" MaxLength="30" />
+          <Property Name="Horas" Type="int" />
+          <Property Name="Fecha" Type="varchar" MaxLength="30" />
+          <Property Name="Idioma" Type="varchar" MaxLength="30" />
+          <Property Name="Habla" Type="varchar" MaxLength="30" />
+          <Property Name="Lee" Type="varchar" MaxLength="30" />
+          <Property Name="Escribe" Type="varchar" MaxLength="30" />
+          <Property Name="Dominio" Type="varchar" MaxLength="30" />
+          <Property Name="Actividad_Puesto" Type="varchar" MaxLength="30" Nullable="false" />
+          <Property Name="Organizacion_Empresa" Type="varchar" MaxLength="30" Nullable="false" />
+          <Property Name="Periodo" Type="varchar" MaxLength="30" Nullable="false" />
+          <Property Name="Actividad_Puesto2" Type="varchar" MaxLength="30" />
+          <Property Name="Organizacion_Empresa2" Type="varchar" MaxLength="30" />
+          <Property Name="Periodo2" Type="varchar" MaxLength="30" />
+          <Property Name="Actividad_Puesto3" Type="varchar" MaxLength="30" />
+          <Property Name="Organizacion_Empresa3" Type="varchar" MaxLength="30" />
+          <Property Name="Periodo3" Type="varchar" MaxLength="30" />
+          <Property Name="Actividad_Puesto_Aca" Type="varchar" MaxLength="30" Nullable="false" />
+          <Property Name="Institucion_Aca" Type="varchar" MaxLength="30" Nullable="false" />
+          <Property Name="Periodo_Aca" Type="varchar" MaxLength="30" Nullable="false" />
+          <Property Name="Actividad_Puesto_Aca2" Type="varchar" MaxLength="30" />
+          <Property Name="Institucion_Aca2" Type="varchar" MaxLength="30" />
+          <Property Name="Periodo_Aca2" Type="varchar" MaxLength="30" />
+          <Property Name="Actividad_Puesto_Aca3" Type="varchar" MaxLength="30" />
+          <Property Name="Institucion_Aca3" Type="varchar" MaxLength="30" />
+          <Property Name="Periodo_Aca3" Type="varchar" MaxLength="30" />
+          <Property Name="Ingenieria_Idustrial" Type="int" />
+          <Property Name="Ingenieria_Sistemas" Type="int" />
+          <Property Name="Tics" Type="int" />
+          <Property Name="Ingenieria_Gestion" Type="int" />
+          <Property Name="Ingenieria_Logistica" Type="int" />
+          <Property Name="Ingenieria_Industrial_Dis" Type="int" />
+          <Property Name="Contador" Type="int" />
+          <Property Name="Ingenieria_Mecatronica" Type="int" />
+          <Property Name="Ingenieria_Gestion_Dis" Type="int" />
+          <Property Name="Ingenieria_Administracion" Type="int" />
+          <Property Name="Nombre_Materia_Ant" Type="varchar" MaxLength="30" Nullable="false" />
+          <Property Name="Carrera_Ant" Type="varchar" MaxLength="30" Nullable="false" />
+          <Property Name="Semestre_Ant" Type="varchar" MaxLength="30" Nullable="false" />
+          <Property Name="Nombre_Materia_Ant2" Type="varchar" MaxLength="30" />
+          <Property Name="Carrera_Ant2" Type="varchar" MaxLength="30" />
+          <Property Name="Semestre_Ant2" Type="varchar" MaxLength="30" />
+          <Property Name="Nombre_Materia_Ant3" Type="varchar" MaxLength="30" />
+          <Property Name="Carrera_Ant3" Type="varchar" MaxLength="30" />
+          <Property Name="Semestre_Ant3" Type="varchar" MaxLength="30" />
+          <Property Name="Nombre_Materia_Ant4" Type="varchar" MaxLength="30" />
+          <Property Name="Carrera_Ant4" Type="varchar" MaxLength="30" />
+          <Property Name="Semestre_Ant4" Type="varchar" MaxLength="30" />
+          <Property Name="Nombre_Materia_Ant5" Type="varchar" MaxLength="30" />
+          <Property Name="Carrera_Ant5" Type="varchar" MaxLength="30" />
+          <Property Name="Semestre_Ant5" Type="varchar" MaxLength="30" />
+          <Property Name="Nombre_Materia_Ant6" Type="varchar" MaxLength="30" />
+          <Property Name="Carrera_Ant6" Type="varchar" MaxLength="30" />
+          <Property Name="Semestre_Ant6" Type="varchar" MaxLength="30" />
+          <Property Name="Nombre_Materia_Ant7" Type="varchar" MaxLength="30" />
+          <Property Name="Carrera_Ant7" Type="varchar" MaxLength="30" />
+          <Property Name="Semestre_Ant7" Type="varchar" MaxLength="30" />
+          <Property Name="Nombre_Materia_Ant8" Type="varchar" MaxLength="30" />
+          <Property Name="Carrera_Ant8" Type="varchar" MaxLength="30" />
+          <Property Name="Semestre_Ant8" Type="varchar" MaxLength="30" />
+          <Property Name="Nombre_Materia_Ant9" Type="varchar" MaxLength="30" />
+          <Property Name="Carrera_Ant9" Type="varchar" MaxLength="30" />
+          <Property Name="Semestre_Ant9" Type="varchar" MaxLength="30" />
+          <Property Name="Nombre_Materia_Imp" Type="varchar" MaxLength="30" />
+          <Property Name="Carrera_Imp" Type="varchar" MaxLength="30" />
+          <Property Name="Semestre_Imp" Type="varchar" MaxLength="30" />
+          <Property Name="Nombre_Materia_Imp2" Type="varchar" MaxLength="30" />
+          <Property Name="Carrera_Imp2" Type="varchar" MaxLength="30" />
+          <Property Name="Semestre_Imp2" Type="varchar" MaxLength="30" />
+          <Property Name="Nombre_Materia_Imp3" Type="varchar" MaxLength="30" />
+          <Property Name="Carrera_Imp3" Type="varchar" MaxLength="30" />
+          <Property Name="Semestre_Imp3" Type="varchar" MaxLength="30" />
+          <Property Name="Nombre_Materia_Imp4" Type="varchar" MaxLength="30" />
+          <Property Name="Carrera_Imp4" Type="varchar" MaxLength="30" />
+          <Property Name="Semestre_Imp4" Type="varchar" MaxLength="30" />
+          <Property Name="Nombre_Materia_Imp5" Type="varchar" MaxLength="30" />
+          <Property Name="Carrera_Imp5" Type="varchar" MaxLength="30" />
+          <Property Name="Semestre_Imp5" Type="varchar" MaxLength="30" />
+          <Property Name="Nombre_Materia_Imp6" Type="varchar" MaxLength="30" />
+          <Property Name="Carrera_Imp6" Type="varchar" MaxLength="30" />
+          <Property Name="Semestre_Imp6" Type="varchar" MaxLength="30" />
+          <Property Name="Nombre_Materia_Imp7" Type="varchar" MaxLength="30" />
+          <Property Name="Carrera_Imp7" Type="varchar" MaxLength="30" />
+          <Property Name="Semestre_Imp7" Type="varchar" MaxLength="30" />
+          <Property Name="Nombre_Materia_Imp8" Type="varchar" MaxLength="30" />
+          <Property Name="Carrera_Imp8" Type="varchar" MaxLength="30" />
+          <Property Name="Semestre_Imp8" Type="varchar" MaxLength="30" />
+          <Property Name="Nombre_Materia_Imp9" Type="varchar" MaxLength="30" />
+          <Property Name="Carrera_Imp9" Type="varchar" MaxLength="30" />
+          <Property Name="Semestre_Imp9" Type="varchar" MaxLength="30" />
+          <Property Name="Nombre_Materia_Imp10" Type="varchar" MaxLength="30" />
+          <Property Name="Carrera_Imp10" Type="varchar" MaxLength="30" />
+          <Property Name="Semestre_Imp10" Type="varchar" MaxLength="30" />
+        </EntityType>
+        <Function Name="SP_Datos_Personales_Add" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="Nombre" Type="varchar" Mode="In" />
+          <Parameter Name="APaterno" Type="varchar" Mode="In" />
+          <Parameter Name="AMaterno" Type="varchar" Mode="In" />
+          <Parameter Name="Edad" Type="int" Mode="In" />
+          <Parameter Name="Lugar_de_Nacimiento" Type="varchar" Mode="In" />
+          <Parameter Name="Estado_Civil" Type="varchar" Mode="In" />
+          <Parameter Name="CURP" Type="varchar" Mode="In" />
+          <Parameter Name="Direccion" Type="varchar" Mode="In" />
+          <Parameter Name="Numero_Casa" Type="varchar" Mode="In" />
+          <Parameter Name="Numero_Celular" Type="varchar" Mode="In" />
+          <Parameter Name="Nombre_Licenciatura" Type="varchar" Mode="In" />
+          <Parameter Name="Institucion_Lic" Type="varchar" Mode="In" />
+          <Parameter Name="Periodo_Lic" Type="int" Mode="In" />
+          <Parameter Name="Año_Titulacion_Lic" Type="varchar" Mode="In" />
+          <Parameter Name="Nombre_Maestria" Type="varchar" Mode="In" />
+          <Parameter Name="Institucion_Mae" Type="varchar" Mode="In" />
+          <Parameter Name="Periodo_Mae" Type="int" Mode="In" />
+          <Parameter Name="Año_Titulacion_Mae" Type="varchar" Mode="In" />
+          <Parameter Name="Nombre_Doctorado" Type="varchar" Mode="In" />
+          <Parameter Name="Institucion_Doc" Type="varchar" Mode="In" />
+          <Parameter Name="Periodo_Doc" Type="int" Mode="In" />
+          <Parameter Name="Años_Titulacion_Doc" Type="varchar" Mode="In" />
+          <Parameter Name="Nombre_Especializacion" Type="varchar" Mode="In" />
+          <Parameter Name="Institucion_Espe" Type="varchar" Mode="In" />
+          <Parameter Name="Periodo_Espe" Type="int" Mode="In" />
+          <Parameter Name="Año_Titulacion_Espe" Type="varchar" Mode="In" />
+          <Parameter Name="Nombre_Curso" Type="varchar" Mode="In" />
+          <Parameter Name="Institucion_Curso" Type="varchar" Mode="In" />
+          <Parameter Name="Horas" Type="int" Mode="In" />
+          <Parameter Name="Fecha" Type="varchar" Mode="In" />
+          <Parameter Name="Idioma" Type="varchar" Mode="In" />
+          <Parameter Name="Habla" Type="varchar" Mode="In" />
+          <Parameter Name="Lee" Type="varchar" Mode="In" />
+          <Parameter Name="Escribe" Type="varchar" Mode="In" />
+          <Parameter Name="Dominio" Type="varchar" Mode="In" />
+          <Parameter Name="Actividad_Puesto" Type="varchar" Mode="In" />
+          <Parameter Name="Organizacion_Empresa" Type="varchar" Mode="In" />
+          <Parameter Name="Periodo" Type="varchar" Mode="In" />
+          <Parameter Name="Actividad_Puesto2" Type="varchar" Mode="In" />
+          <Parameter Name="Organizacion_Empresa2" Type="varchar" Mode="In" />
+          <Parameter Name="Periodo2" Type="varchar" Mode="In" />
+          <Parameter Name="Actividad_Puesto3" Type="varchar" Mode="In" />
+          <Parameter Name="Organizacion_Empresa3" Type="varchar" Mode="In" />
+          <Parameter Name="Periodo3" Type="varchar" Mode="In" />
+          <Parameter Name="Actividad_Puesto_Aca" Type="varchar" Mode="In" />
+          <Parameter Name="Institucion_Aca" Type="varchar" Mode="In" />
+          <Parameter Name="Periodo_Aca" Type="varchar" Mode="In" />
+          <Parameter Name="Actividad_Puesto_Aca2" Type="varchar" Mode="In" />
+          <Parameter Name="Institucion_Aca2" Type="varchar" Mode="In" />
+          <Parameter Name="Periodo_Aca2" Type="varchar" Mode="In" />
+          <Parameter Name="Actividad_Puesto_Aca3" Type="varchar" Mode="In" />
+          <Parameter Name="Institucion_Aca3" Type="varchar" Mode="In" />
+          <Parameter Name="Periodo_Aca3" Type="varchar" Mode="In" />
+          <Parameter Name="Ingenieria_Idustrial" Type="int" Mode="In" />
+          <Parameter Name="Ingenieria_Sistemas" Type="int" Mode="In" />
+          <Parameter Name="Tics" Type="int" Mode="In" />
+          <Parameter Name="Ingenieria_Gestion" Type="int" Mode="In" />
+          <Parameter Name="Ingenieria_Logistica" Type="int" Mode="In" />
+          <Parameter Name="Ingenieria_Industrial_Dis" Type="int" Mode="In" />
+          <Parameter Name="Contador" Type="int" Mode="In" />
+          <Parameter Name="Ingenieria_Mecatronica" Type="int" Mode="In" />
+          <Parameter Name="Ingenieria_Gestion_Dis" Type="int" Mode="In" />
+          <Parameter Name="Ingenieria_Administracion" Type="int" Mode="In" />
+          <Parameter Name="Nombre_Materia_Ant" Type="varchar" Mode="In" />
+          <Parameter Name="Carrera_Ant" Type="varchar" Mode="In" />
+          <Parameter Name="Semestre_Ant" Type="varchar" Mode="In" />
+          <Parameter Name="Nombre_Materia_Ant2" Type="varchar" Mode="In" />
+          <Parameter Name="Carrera_Ant2" Type="varchar" Mode="In" />
+          <Parameter Name="Semestre_Ant2" Type="varchar" Mode="In" />
+          <Parameter Name="Nombre_Materia_Ant3" Type="varchar" Mode="In" />
+          <Parameter Name="Carrera_Ant3" Type="varchar" Mode="In" />
+          <Parameter Name="Semestre_Ant3" Type="varchar" Mode="In" />
+          <Parameter Name="Nombre_Materia_Ant4" Type="varchar" Mode="In" />
+          <Parameter Name="Carrera_Ant4" Type="varchar" Mode="In" />
+          <Parameter Name="Semestre_Ant4" Type="varchar" Mode="In" />
+          <Parameter Name="Nombre_Materia_Ant5" Type="varchar" Mode="In" />
+          <Parameter Name="Carrera_Ant5" Type="varchar" Mode="In" />
+          <Parameter Name="Semestre_Ant5" Type="varchar" Mode="In" />
+          <Parameter Name="Nombre_Materia_Ant6" Type="varchar" Mode="In" />
+          <Parameter Name="Carrera_Ant6" Type="varchar" Mode="In" />
+          <Parameter Name="Semestre_Ant6" Type="varchar" Mode="In" />
+          <Parameter Name="Nombre_Materia_Ant7" Type="varchar" Mode="In" />
+          <Parameter Name="Carrera_Ant7" Type="varchar" Mode="In" />
+          <Parameter Name="Semestre_Ant7" Type="varchar" Mode="In" />
+          <Parameter Name="Nombre_Materia_Ant8" Type="varchar" Mode="In" />
+          <Parameter Name="Carrera_Ant8" Type="varchar" Mode="In" />
+          <Parameter Name="Semestre_Ant8" Type="varchar" Mode="In" />
+          <Parameter Name="Nombre_Materia_Ant9" Type="varchar" Mode="In" />
+          <Parameter Name="Carrera_Ant9" Type="varchar" Mode="In" />
+          <Parameter Name="Semestre_Ant9" Type="varchar" Mode="In" />
+          <Parameter Name="Nombre_Materia_Imp" Type="varchar" Mode="In" />
+          <Parameter Name="Carrera_Imp" Type="varchar" Mode="In" />
+          <Parameter Name="Semestre_Imp" Type="varchar" Mode="In" />
+          <Parameter Name="Nombre_Materia_Imp2" Type="varchar" Mode="In" />
+          <Parameter Name="Carrera_Imp2" Type="varchar" Mode="In" />
+          <Parameter Name="Semestre_Imp2" Type="varchar" Mode="In" />
+          <Parameter Name="Nombre_Materia_Imp3" Type="varchar" Mode="In" />
+          <Parameter Name="Carrera_Imp3" Type="varchar" Mode="In" />
+          <Parameter Name="Semestre_Imp3" Type="varchar" Mode="In" />
+          <Parameter Name="Nombre_Materia_Imp4" Type="varchar" Mode="In" />
+          <Parameter Name="Carrera_Imp4" Type="varchar" Mode="In" />
+          <Parameter Name="Semestre_Imp4" Type="varchar" Mode="In" />
+          <Parameter Name="Nombre_Materia_Imp5" Type="varchar" Mode="In" />
+          <Parameter Name="Carrera_Imp5" Type="varchar" Mode="In" />
+          <Parameter Name="Semestre_Imp5" Type="varchar" Mode="In" />
+          <Parameter Name="Nombre_Materia_Imp6" Type="varchar" Mode="In" />
+          <Parameter Name="Carrera_Imp6" Type="varchar" Mode="In" />
+          <Parameter Name="Semestre_Imp6" Type="varchar" Mode="In" />
+          <Parameter Name="Nombre_Materia_Imp7" Type="varchar" Mode="In" />
+          <Parameter Name="Carrera_Imp7" Type="varchar" Mode="In" />
+          <Parameter Name="Semestre_Imp7" Type="varchar" Mode="In" />
+          <Parameter Name="Nombre_Materia_Imp8" Type="varchar" Mode="In" />
+          <Parameter Name="Carrera_Imp8" Type="varchar" Mode="In" />
+          <Parameter Name="Semestre_Imp8" Type="varchar" Mode="In" />
+          <Parameter Name="Nombre_Materia_Imp9" Type="varchar" Mode="In" />
+          <Parameter Name="Carrera_Imp9" Type="varchar" Mode="In" />
+          <Parameter Name="Semestre_Imp9" Type="varchar" Mode="In" />
+          <Parameter Name="Nombre_Materia_Imp10" Type="varchar" Mode="In" />
+          <Parameter Name="Carrera_Imp10" Type="varchar" Mode="In" />
+          <Parameter Name="Semestre_Imp10" Type="varchar" Mode="In" />
+        </Function>
+        <Function Name="SP_Datos_Personales_Delete" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="Id_Datos_Personales" Type="int" Mode="In" />
+        </Function>
+        <Function Name="SP_Datos_Personales_GetAll" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+        <Function Name="SP_Datos_Personales_GetById" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="Id_Datos_Personales" Type="int" Mode="In" />
+        </Function>
+        <EntityContainer Name="DisponibilidadModel3StoreContainer">
+          <EntitySet Name="Datos_Personales" EntityType="Self.Datos_Personales" Schema="dbo" store:Type="Tables" />
+        </EntityContainer>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="DisponibilidadModel3" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="Datos_Personales">
+          <Key>
+            <PropertyRef Name="Id_Datos_Personales" />
+          </Key>
+          <Property Name="Id_Datos_Personales" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Nombre" Type="String" MaxLength="25" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="APaterno" Type="String" MaxLength="25" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="AMaterno" Type="String" MaxLength="25" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="Edad" Type="Int32" Nullable="false" />
+          <Property Name="Lugar_de_Nacimiento" Type="String" MaxLength="30" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="Estado_Civil" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="CURP" Type="String" MaxLength="30" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="Direccion" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="Numero_Casa" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="Numero_Celular" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="Nombre_Licenciatura" Type="String" MaxLength="25" FixedLength="false" Unicode="false" />
+          <Property Name="Institucion_Lic" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+          <Property Name="Periodo_Lic" Type="Int32" />
+          <Property Name="Año_Titulacion_Lic" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+          <Property Name="Nombre_Maestria" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+          <Property Name="Institucion_Mae" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+          <Property Name="Periodo_Mae" Type="Int32" />
+          <Property Name="Año_Titulacion_Mae" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+          <Property Name="Nombre_Doctorado" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+          <Property Name="Institucion_Doc" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+          <Property Name="Periodo_Doc" Type="Int32" />
+          <Property Name="Años_Titulacion_Doc" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+          <Property Name="Nombre_Especializacion" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+          <Property Name="Institucion_Espe" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+          <Property Name="Periodo_Espe" Type="Int32" />
+          <Property Name="Año_Titulacion_Espe" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+          <Property Name="Nombre_Curso" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+          <Property Name="Institucion_Curso" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+          <Property Name="Horas" Type="Int32" />
+          <Property Name="Fecha" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+          <Property Name="Idioma" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+          <Property Name="Habla" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+          <Property Name="Lee" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+          <Property Name="Escribe" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+          <Property Name="Dominio" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+          <Property Name="Actividad_Puesto" Type="String" MaxLength="30" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="Organizacion_Empresa" Type="String" MaxLength="30" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="Periodo" Type="String" MaxLength="30" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="Actividad_Puesto2" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+          <Property Name="Organizacion_Empresa2" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+          <Property Name="Periodo2" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+          <Property Name="Actividad_Puesto3" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+          <Property Name="Organizacion_Empresa3" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+          <Property Name="Periodo3" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+          <Property Name="Actividad_Puesto_Aca" Type="String" MaxLength="30" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="Institucion_Aca" Type="String" MaxLength="30" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="Periodo_Aca" Type="String" MaxLength="30" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="Actividad_Puesto_Aca2" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+          <Property Name="Institucion_Aca2" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+          <Property Name="Periodo_Aca2" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+          <Property Name="Actividad_Puesto_Aca3" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+          <Property Name="Institucion_Aca3" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+          <Property Name="Periodo_Aca3" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+          <Property Name="Ingenieria_Idustrial" Type="Int32" />
+          <Property Name="Ingenieria_Sistemas" Type="Int32" />
+          <Property Name="Tics" Type="Int32" />
+          <Property Name="Ingenieria_Gestion" Type="Int32" />
+          <Property Name="Ingenieria_Logistica" Type="Int32" />
+          <Property Name="Ingenieria_Industrial_Dis" Type="Int32" />
+          <Property Name="Contador" Type="Int32" />
+          <Property Name="Ingenieria_Mecatronica" Type="Int32" />
+          <Property Name="Ingenieria_Gestion_Dis" Type="Int32" />
+          <Property Name="Ingenieria_Administracion" Type="Int32" />
+          <Property Name="Nombre_Materia_Ant" Type="String" MaxLength="30" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="Carrera_Ant" Type="String" MaxLength="30" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="Semestre_Ant" Type="String" MaxLength="30" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="Nombre_Materia_Ant2" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+          <Property Name="Carrera_Ant2" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+          <Property Name="Semestre_Ant2" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+          <Property Name="Nombre_Materia_Ant3" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+          <Property Name="Carrera_Ant3" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+          <Property Name="Semestre_Ant3" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+          <Property Name="Nombre_Materia_Ant4" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+          <Property Name="Carrera_Ant4" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+          <Property Name="Semestre_Ant4" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+          <Property Name="Nombre_Materia_Ant5" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+          <Property Name="Carrera_Ant5" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+          <Property Name="Semestre_Ant5" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+          <Property Name="Nombre_Materia_Ant6" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+          <Property Name="Carrera_Ant6" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+          <Property Name="Semestre_Ant6" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+          <Property Name="Nombre_Materia_Ant7" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+          <Property Name="Carrera_Ant7" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+          <Property Name="Semestre_Ant7" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+          <Property Name="Nombre_Materia_Ant8" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+          <Property Name="Carrera_Ant8" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+          <Property Name="Semestre_Ant8" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+          <Property Name="Nombre_Materia_Ant9" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+          <Property Name="Carrera_Ant9" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+          <Property Name="Semestre_Ant9" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+          <Property Name="Nombre_Materia_Imp" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+          <Property Name="Carrera_Imp" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+          <Property Name="Semestre_Imp" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+          <Property Name="Nombre_Materia_Imp2" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+          <Property Name="Carrera_Imp2" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+          <Property Name="Semestre_Imp2" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+          <Property Name="Nombre_Materia_Imp3" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+          <Property Name="Carrera_Imp3" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+          <Property Name="Semestre_Imp3" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+          <Property Name="Nombre_Materia_Imp4" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+          <Property Name="Carrera_Imp4" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+          <Property Name="Semestre_Imp4" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+          <Property Name="Nombre_Materia_Imp5" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+          <Property Name="Carrera_Imp5" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+          <Property Name="Semestre_Imp5" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+          <Property Name="Nombre_Materia_Imp6" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+          <Property Name="Carrera_Imp6" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+          <Property Name="Semestre_Imp6" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+          <Property Name="Nombre_Materia_Imp7" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+          <Property Name="Carrera_Imp7" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+          <Property Name="Semestre_Imp7" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+          <Property Name="Nombre_Materia_Imp8" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+          <Property Name="Carrera_Imp8" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+          <Property Name="Semestre_Imp8" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+          <Property Name="Nombre_Materia_Imp9" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+          <Property Name="Carrera_Imp9" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+          <Property Name="Semestre_Imp9" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+          <Property Name="Nombre_Materia_Imp10" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+          <Property Name="Carrera_Imp10" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+          <Property Name="Semestre_Imp10" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+        </EntityType>
+        <EntityContainer Name="DisponibilidadEntities3" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="Datos_Personales" EntityType="Self.Datos_Personales" />
+          <FunctionImport Name="SP_Datos_Personales_Add">
+            <Parameter Name="Nombre" Mode="In" Type="String" />
+            <Parameter Name="APaterno" Mode="In" Type="String" />
+            <Parameter Name="AMaterno" Mode="In" Type="String" />
+            <Parameter Name="Edad" Mode="In" Type="Int32" />
+            <Parameter Name="Lugar_de_Nacimiento" Mode="In" Type="String" />
+            <Parameter Name="Estado_Civil" Mode="In" Type="String" />
+            <Parameter Name="CURP" Mode="In" Type="String" />
+            <Parameter Name="Direccion" Mode="In" Type="String" />
+            <Parameter Name="Numero_Casa" Mode="In" Type="String" />
+            <Parameter Name="Numero_Celular" Mode="In" Type="String" />
+            <Parameter Name="Nombre_Licenciatura" Mode="In" Type="String" />
+            <Parameter Name="Institucion_Lic" Mode="In" Type="String" />
+            <Parameter Name="Periodo_Lic" Mode="In" Type="Int32" />
+            <Parameter Name="Año_Titulacion_Lic" Mode="In" Type="String" />
+            <Parameter Name="Nombre_Maestria" Mode="In" Type="String" />
+            <Parameter Name="Institucion_Mae" Mode="In" Type="String" />
+            <Parameter Name="Periodo_Mae" Mode="In" Type="Int32" />
+            <Parameter Name="Año_Titulacion_Mae" Mode="In" Type="String" />
+            <Parameter Name="Nombre_Doctorado" Mode="In" Type="String" />
+            <Parameter Name="Institucion_Doc" Mode="In" Type="String" />
+            <Parameter Name="Periodo_Doc" Mode="In" Type="Int32" />
+            <Parameter Name="Años_Titulacion_Doc" Mode="In" Type="String" />
+            <Parameter Name="Nombre_Especializacion" Mode="In" Type="String" />
+            <Parameter Name="Institucion_Espe" Mode="In" Type="String" />
+            <Parameter Name="Periodo_Espe" Mode="In" Type="Int32" />
+            <Parameter Name="Año_Titulacion_Espe" Mode="In" Type="String" />
+            <Parameter Name="Nombre_Curso" Mode="In" Type="String" />
+            <Parameter Name="Institucion_Curso" Mode="In" Type="String" />
+            <Parameter Name="Horas" Mode="In" Type="Int32" />
+            <Parameter Name="Fecha" Mode="In" Type="String" />
+            <Parameter Name="Idioma" Mode="In" Type="String" />
+            <Parameter Name="Habla" Mode="In" Type="String" />
+            <Parameter Name="Lee" Mode="In" Type="String" />
+            <Parameter Name="Escribe" Mode="In" Type="String" />
+            <Parameter Name="Dominio" Mode="In" Type="String" />
+            <Parameter Name="Actividad_Puesto" Mode="In" Type="String" />
+            <Parameter Name="Organizacion_Empresa" Mode="In" Type="String" />
+            <Parameter Name="Periodo" Mode="In" Type="String" />
+            <Parameter Name="Actividad_Puesto2" Mode="In" Type="String" />
+            <Parameter Name="Organizacion_Empresa2" Mode="In" Type="String" />
+            <Parameter Name="Periodo2" Mode="In" Type="String" />
+            <Parameter Name="Actividad_Puesto3" Mode="In" Type="String" />
+            <Parameter Name="Organizacion_Empresa3" Mode="In" Type="String" />
+            <Parameter Name="Periodo3" Mode="In" Type="String" />
+            <Parameter Name="Actividad_Puesto_Aca" Mode="In" Type="String" />
+            <Parameter Name="Institucion_Aca" Mode="In" Type="String" />
+            <Parameter Name="Periodo_Aca" Mode="In" Type="String" />
+            <Parameter Name="Actividad_Puesto_Aca2" Mode="In" Type="String" />
+            <Parameter Name="Institucion_Aca2" Mode="In" Type="String" />
+            <Parameter Name="Periodo_Aca2" Mode="In" Type="String" />
+            <Parameter Name="Actividad_Puesto_Aca3" Mode="In" Type="String" />
+            <Parameter Name="Institucion_Aca3" Mode="In" Type="String" />
+            <Parameter Name="Periodo_Aca3" Mode="In" Type="String" />
+            <Parameter Name="Ingenieria_Idustrial" Mode="In" Type="Int32" />
+            <Parameter Name="Ingenieria_Sistemas" Mode="In" Type="Int32" />
+            <Parameter Name="Tics" Mode="In" Type="Int32" />
+            <Parameter Name="Ingenieria_Gestion" Mode="In" Type="Int32" />
+            <Parameter Name="Ingenieria_Logistica" Mode="In" Type="Int32" />
+            <Parameter Name="Ingenieria_Industrial_Dis" Mode="In" Type="Int32" />
+            <Parameter Name="Contador" Mode="In" Type="Int32" />
+            <Parameter Name="Ingenieria_Mecatronica" Mode="In" Type="Int32" />
+            <Parameter Name="Ingenieria_Gestion_Dis" Mode="In" Type="Int32" />
+            <Parameter Name="Ingenieria_Administracion" Mode="In" Type="Int32" />
+            <Parameter Name="Nombre_Materia_Ant" Mode="In" Type="String" />
+            <Parameter Name="Carrera_Ant" Mode="In" Type="String" />
+            <Parameter Name="Semestre_Ant" Mode="In" Type="String" />
+            <Parameter Name="Nombre_Materia_Ant2" Mode="In" Type="String" />
+            <Parameter Name="Carrera_Ant2" Mode="In" Type="String" />
+            <Parameter Name="Semestre_Ant2" Mode="In" Type="String" />
+            <Parameter Name="Nombre_Materia_Ant3" Mode="In" Type="String" />
+            <Parameter Name="Carrera_Ant3" Mode="In" Type="String" />
+            <Parameter Name="Semestre_Ant3" Mode="In" Type="String" />
+            <Parameter Name="Nombre_Materia_Ant4" Mode="In" Type="String" />
+            <Parameter Name="Carrera_Ant4" Mode="In" Type="String" />
+            <Parameter Name="Semestre_Ant4" Mode="In" Type="String" />
+            <Parameter Name="Nombre_Materia_Ant5" Mode="In" Type="String" />
+            <Parameter Name="Carrera_Ant5" Mode="In" Type="String" />
+            <Parameter Name="Semestre_Ant5" Mode="In" Type="String" />
+            <Parameter Name="Nombre_Materia_Ant6" Mode="In" Type="String" />
+            <Parameter Name="Carrera_Ant6" Mode="In" Type="String" />
+            <Parameter Name="Semestre_Ant6" Mode="In" Type="String" />
+            <Parameter Name="Nombre_Materia_Ant7" Mode="In" Type="String" />
+            <Parameter Name="Carrera_Ant7" Mode="In" Type="String" />
+            <Parameter Name="Semestre_Ant7" Mode="In" Type="String" />
+            <Parameter Name="Nombre_Materia_Ant8" Mode="In" Type="String" />
+            <Parameter Name="Carrera_Ant8" Mode="In" Type="String" />
+            <Parameter Name="Semestre_Ant8" Mode="In" Type="String" />
+            <Parameter Name="Nombre_Materia_Ant9" Mode="In" Type="String" />
+            <Parameter Name="Carrera_Ant9" Mode="In" Type="String" />
+            <Parameter Name="Semestre_Ant9" Mode="In" Type="String" />
+            <Parameter Name="Nombre_Materia_Imp" Mode="In" Type="String" />
+            <Parameter Name="Carrera_Imp" Mode="In" Type="String" />
+            <Parameter Name="Semestre_Imp" Mode="In" Type="String" />
+            <Parameter Name="Nombre_Materia_Imp2" Mode="In" Type="String" />
+            <Parameter Name="Carrera_Imp2" Mode="In" Type="String" />
+            <Parameter Name="Semestre_Imp2" Mode="In" Type="String" />
+            <Parameter Name="Nombre_Materia_Imp3" Mode="In" Type="String" />
+            <Parameter Name="Carrera_Imp3" Mode="In" Type="String" />
+            <Parameter Name="Semestre_Imp3" Mode="In" Type="String" />
+            <Parameter Name="Nombre_Materia_Imp4" Mode="In" Type="String" />
+            <Parameter Name="Carrera_Imp4" Mode="In" Type="String" />
+            <Parameter Name="Semestre_Imp4" Mode="In" Type="String" />
+            <Parameter Name="Nombre_Materia_Imp5" Mode="In" Type="String" />
+            <Parameter Name="Carrera_Imp5" Mode="In" Type="String" />
+            <Parameter Name="Semestre_Imp5" Mode="In" Type="String" />
+            <Parameter Name="Nombre_Materia_Imp6" Mode="In" Type="String" />
+            <Parameter Name="Carrera_Imp6" Mode="In" Type="String" />
+            <Parameter Name="Semestre_Imp6" Mode="In" Type="String" />
+            <Parameter Name="Nombre_Materia_Imp7" Mode="In" Type="String" />
+            <Parameter Name="Carrera_Imp7" Mode="In" Type="String" />
+            <Parameter Name="Semestre_Imp7" Mode="In" Type="String" />
+            <Parameter Name="Nombre_Materia_Imp8" Mode="In" Type="String" />
+            <Parameter Name="Carrera_Imp8" Mode="In" Type="String" />
+            <Parameter Name="Semestre_Imp8" Mode="In" Type="String" />
+            <Parameter Name="Nombre_Materia_Imp9" Mode="In" Type="String" />
+            <Parameter Name="Carrera_Imp9" Mode="In" Type="String" />
+            <Parameter Name="Semestre_Imp9" Mode="In" Type="String" />
+            <Parameter Name="Nombre_Materia_Imp10" Mode="In" Type="String" />
+            <Parameter Name="Carrera_Imp10" Mode="In" Type="String" />
+            <Parameter Name="Semestre_Imp10" Mode="In" Type="String" />
+          </FunctionImport>
+          <FunctionImport Name="SP_Datos_Personales_Delete">
+            <Parameter Name="Id_Datos_Personales" Mode="In" Type="Int32" />
+          </FunctionImport>
+          <FunctionImport Name="SP_Datos_Personales_GetAll" ReturnType="Collection(DisponibilidadModel3.SP_Datos_Personales_GetAll_Result)" />
+          <FunctionImport Name="SP_Datos_Personales_GetById" ReturnType="Collection(DisponibilidadModel3.SP_Datos_Personales_GetById_Result)">
+            <Parameter Name="Id_Datos_Personales" Mode="In" Type="Int32" />
+          </FunctionImport>
+        </EntityContainer>
+        <ComplexType Name="SP_Datos_Personales_GetAll_Result">
+          <Property Type="Int32" Name="Id_Datos_Personales" Nullable="false" />
+          <Property Type="String" Name="Nombre" Nullable="false" MaxLength="25" />
+          <Property Type="String" Name="APaterno" Nullable="false" MaxLength="25" />
+          <Property Type="String" Name="AMaterno" Nullable="false" MaxLength="25" />
+          <Property Type="Int32" Name="Edad" Nullable="false" />
+          <Property Type="String" Name="Lugar_de_Nacimiento" Nullable="false" MaxLength="30" />
+          <Property Type="String" Name="Estado_Civil" Nullable="false" MaxLength="20" />
+          <Property Type="String" Name="CURP" Nullable="false" MaxLength="30" />
+          <Property Type="String" Name="Direccion" Nullable="false" MaxLength="100" />
+          <Property Type="String" Name="Numero_Casa" Nullable="true" MaxLength="20" />
+          <Property Type="String" Name="Numero_Celular" Nullable="true" MaxLength="20" />
+          <Property Type="String" Name="Nombre_Licenciatura" Nullable="true" MaxLength="25" />
+          <Property Type="String" Name="Institucion_Lic" Nullable="true" MaxLength="30" />
+          <Property Type="Int32" Name="Periodo_Lic" Nullable="true" />
+          <Property Type="String" Name="Año_Titulacion_Lic" Nullable="true" MaxLength="30" />
+          <Property Type="String" Name="Nombre_Maestria" Nullable="true" MaxLength="30" />
+          <Property Type="String" Name="Institucion_Mae" Nullable="true" MaxLength="30" />
+          <Property Type="Int32" Name="Periodo_Mae" Nullable="true" />
+          <Property Type="String" Name="Año_Titulacion_Mae" Nullable="true" MaxLength="30" />
+          <Property Type="String" Name="Nombre_Doctorado" Nullable="true" MaxLength="30" />
+          <Property Type="String" Name="Institucion_Doc" Nullable="true" MaxLength="30" />
+          <Property Type="Int32" Name="Periodo_Doc" Nullable="true" />
+          <Property Type="String" Name="Años_Titulacion_Doc" Nullable="true" MaxLength="30" />
+          <Property Type="String" Name="Nombre_Especializacion" Nullable="true" MaxLength="30" />
+          <Property Type="String" Name="Institucion_Espe" Nullable="true" MaxLength="30" />
+          <Property Type="Int32" Name="Periodo_Espe" Nullable="true" />
+          <Property Type="String" Name="Año_Titulacion_Espe" Nullable="true" MaxLength="30" />
+          <Property Type="String" Name="Nombre_Curso" Nullable="true" MaxLength="30" />
+          <Property Type="String" Name="Institucion_Curso" Nullable="true" MaxLength="30" />
+          <Property Type="Int32" Name="Horas" Nullable="true" />
+          <Property Type="String" Name="Fecha" Nullable="true" MaxLength="30" />
+          <Property Type="String" Name="Idioma" Nullable="true" MaxLength="30" />
+          <Property Type="String" Name="Habla" Nullable="true" MaxLength="30" />
+          <Property Type="String" Name="Lee" Nullable="true" MaxLength="30" />
+          <Property Type="String" Name="Escribe" Nullable="true" MaxLength="30" />
+          <Property Type="String" Name="Dominio" Nullable="true" MaxLength="30" />
+          <Property Type="String" Name="Actividad_Puesto" Nullable="false" MaxLength="30" />
+          <Property Type="String" Name="Organizacion_Empresa" Nullable="false" MaxLength="30" />
+          <Property Type="String" Name="Periodo" Nullable="false" MaxLength="30" />
+          <Property Type="String" Name="Actividad_Puesto2" Nullable="true" MaxLength="30" />
+          <Property Type="String" Name="Organizacion_Empresa2" Nullable="true" MaxLength="30" />
+          <Property Type="String" Name="Periodo2" Nullable="true" MaxLength="30" />
+          <Property Type="String" Name="Actividad_Puesto3" Nullable="true" MaxLength="30" />
+          <Property Type="String" Name="Organizacion_Empresa3" Nullable="true" MaxLength="30" />
+          <Property Type="String" Name="Periodo3" Nullable="true" MaxLength="30" />
+          <Property Type="String" Name="Actividad_Puesto_Aca" Nullable="false" MaxLength="30" />
+          <Property Type="String" Name="Institucion_Aca" Nullable="false" MaxLength="30" />
+          <Property Type="String" Name="Periodo_Aca" Nullable="false" MaxLength="30" />
+          <Property Type="String" Name="Actividad_Puesto_Aca2" Nullable="true" MaxLength="30" />
+          <Property Type="String" Name="Institucion_Aca2" Nullable="true" MaxLength="30" />
+          <Property Type="String" Name="Periodo_Aca2" Nullable="true" MaxLength="30" />
+          <Property Type="String" Name="Actividad_Puesto_Aca3" Nullable="true" MaxLength="30" />
+          <Property Type="String" Name="Institucion_Aca3" Nullable="true" MaxLength="30" />
+          <Property Type="String" Name="Periodo_Aca3" Nullable="true" MaxLength="30" />
+          <Property Type="Int32" Name="Ingenieria_Idustrial" Nullable="true" />
+          <Property Type="Int32" Name="Ingenieria_Sistemas" Nullable="true" />
+          <Property Type="Int32" Name="Tics" Nullable="true" />
+          <Property Type="Int32" Name="Ingenieria_Gestion" Nullable="true" />
+          <Property Type="Int32" Name="Ingenieria_Logistica" Nullable="true" />
+          <Property Type="Int32" Name="Ingenieria_Industrial_Dis" Nullable="true" />
+          <Property Type="Int32" Name="Contador" Nullable="true" />
+          <Property Type="Int32" Name="Ingenieria_Mecatronica" Nullable="true" />
+          <Property Type="Int32" Name="Ingenieria_Gestion_Dis" Nullable="true" />
+          <Property Type="Int32" Name="Ingenieria_Administracion" Nullable="true" />
+          <Property Type="String" Name="Nombre_Materia_Ant" Nullable="false" MaxLength="30" />
+          <Property Type="String" Name="Carrera_Ant" Nullable="false" MaxLength="30" />
+          <Property Type="String" Name="Semestre_Ant" Nullable="false" MaxLength="30" />
+          <Property Type="String" Name="Nombre_Materia_Ant2" Nullable="true" MaxLength="30" />
+          <Property Type="String" Name="Carrera_Ant2" Nullable="true" MaxLength="30" />
+          <Property Type="String" Name="Semestre_Ant2" Nullable="true" MaxLength="30" />
+          <Property Type="String" Name="Nombre_Materia_Ant3" Nullable="true" MaxLength="30" />
+          <Property Type="String" Name="Carrera_Ant3" Nullable="true" MaxLength="30" />
+          <Property Type="String" Name="Semestre_Ant3" Nullable="true" MaxLength="30" />
+          <Property Type="String" Name="Nombre_Materia_Ant4" Nullable="true" MaxLength="30" />
+          <Property Type="String" Name="Carrera_Ant4" Nullable="true" MaxLength="30" />
+          <Property Type="String" Name="Semestre_Ant4" Nullable="true" MaxLength="30" />
+          <Property Type="String" Name="Nombre_Materia_Ant5" Nullable="true" MaxLength="30" />
+          <Property Type="String" Name="Carrera_Ant5" Nullable="true" MaxLength="30" />
+          <Property Type="String" Name="Semestre_Ant5" Nullable="true" MaxLength="30" />
+          <Property Type="String" Name="Nombre_Materia_Ant6" Nullable="true" MaxLength="30" />
+          <Property Type="String" Name="Carrera_Ant6" Nullable="true" MaxLength="30" />
+          <Property Type="String" Name="Semestre_Ant6" Nullable="true" MaxLength="30" />
+          <Property Type="String" Name="Nombre_Materia_Ant7" Nullable="true" MaxLength="30" />
+          <Property Type="String" Name="Carrera_Ant7" Nullable="true" MaxLength="30" />
+          <Property Type="String" Name="Semestre_Ant7" Nullable="true" MaxLength="30" />
+          <Property Type="String" Name="Nombre_Materia_Ant8" Nullable="true" MaxLength="30" />
+          <Property Type="String" Name="Carrera_Ant8" Nullable="true" MaxLength="30" />
+          <Property Type="String" Name="Semestre_Ant8" Nullable="true" MaxLength="30" />
+          <Property Type="String" Name="Nombre_Materia_Ant9" Nullable="true" MaxLength="30" />
+          <Property Type="String" Name="Carrera_Ant9" Nullable="true" MaxLength="30" />
+          <Property Type="String" Name="Semestre_Ant9" Nullable="true" MaxLength="30" />
+          <Property Type="String" Name="Nombre_Materia_Imp" Nullable="true" MaxLength="30" />
+          <Property Type="String" Name="Carrera_Imp" Nullable="true" MaxLength="30" />
+          <Property Type="String" Name="Semestre_Imp" Nullable="true" MaxLength="30" />
+          <Property Type="String" Name="Nombre_Materia_Imp2" Nullable="true" MaxLength="30" />
+          <Property Type="String" Name="Carrera_Imp2" Nullable="true" MaxLength="30" />
+          <Property Type="String" Name="Semestre_Imp2" Nullable="true" MaxLength="30" />
+          <Property Type="String" Name="Nombre_Materia_Imp3" Nullable="true" MaxLength="30" />
+          <Property Type="String" Name="Carrera_Imp3" Nullable="true" MaxLength="30" />
+          <Property Type="String" Name="Semestre_Imp3" Nullable="true" MaxLength="30" />
+          <Property Type="String" Name="Nombre_Materia_Imp4" Nullable="true" MaxLength="30" />
+          <Property Type="String" Name="Carrera_Imp4" Nullable="true" MaxLength="30" />
+          <Property Type="String" Name="Semestre_Imp4" Nullable="true" MaxLength="30" />
+          <Property Type="String" Name="Nombre_Materia_Imp5" Nullable="true" MaxLength="30" />
+          <Property Type="String" Name="Carrera_Imp5" Nullable="true" MaxLength="30" />
+          <Property Type="String" Name="Semestre_Imp5" Nullable="true" MaxLength="30" />
+          <Property Type="String" Name="Nombre_Materia_Imp6" Nullable="true" MaxLength="30" />
+          <Property Type="String" Name="Carrera_Imp6" Nullable="true" MaxLength="30" />
+          <Property Type="String" Name="Semestre_Imp6" Nullable="true" MaxLength="30" />
+          <Property Type="String" Name="Nombre_Materia_Imp7" Nullable="true" MaxLength="30" />
+          <Property Type="String" Name="Carrera_Imp7" Nullable="true" MaxLength="30" />
+          <Property Type="String" Name="Semestre_Imp7" Nullable="true" MaxLength="30" />
+          <Property Type="String" Name="Nombre_Materia_Imp8" Nullable="true" MaxLength="30" />
+          <Property Type="String" Name="Carrera_Imp8" Nullable="true" MaxLength="30" />
+          <Property Type="String" Name="Semestre_Imp8" Nullable="true" MaxLength="30" />
+          <Property Type="String" Name="Nombre_Materia_Imp9" Nullable="true" MaxLength="30" />
+          <Property Type="String" Name="Carrera_Imp9" Nullable="true" MaxLength="30" />
+          <Property Type="String" Name="Semestre_Imp9" Nullable="true" MaxLength="30" />
+          <Property Type="String" Name="Nombre_Materia_Imp10" Nullable="true" MaxLength="30" />
+          <Property Type="String" Name="Carrera_Imp10" Nullable="true" MaxLength="30" />
+          <Property Type="String" Name="Semestre_Imp10" Nullable="true" MaxLength="30" />
+        </ComplexType>
+        <ComplexType Name="SP_Datos_Personales_GetById_Result">
+          <Property Type="String" Name="Nombre" Nullable="false" MaxLength="25" />
+          <Property Type="String" Name="APaterno" Nullable="false" MaxLength="25" />
+          <Property Type="String" Name="AMaterno" Nullable="false" MaxLength="25" />
+          <Property Type="Int32" Name="Edad" Nullable="false" />
+          <Property Type="String" Name="Lugar_de_Nacimiento" Nullable="false" MaxLength="30" />
+          <Property Type="String" Name="Estado_Civil" Nullable="false" MaxLength="20" />
+          <Property Type="String" Name="CURP" Nullable="false" MaxLength="30" />
+          <Property Type="String" Name="Direccion" Nullable="false" MaxLength="100" />
+          <Property Type="String" Name="Numero_Casa" Nullable="true" MaxLength="20" />
+          <Property Type="String" Name="Numero_Celular" Nullable="true" MaxLength="20" />
+          <Property Type="String" Name="Nombre_Licenciatura" Nullable="true" MaxLength="25" />
+          <Property Type="String" Name="Institucion_Lic" Nullable="true" MaxLength="30" />
+          <Property Type="Int32" Name="Periodo_Lic" Nullable="true" />
+          <Property Type="String" Name="Año_Titulacion_Lic" Nullable="true" MaxLength="30" />
+          <Property Type="String" Name="Nombre_Maestria" Nullable="true" MaxLength="30" />
+          <Property Type="String" Name="Institucion_Mae" Nullable="true" MaxLength="30" />
+          <Property Type="Int32" Name="Periodo_Mae" Nullable="true" />
+          <Property Type="String" Name="Año_Titulacion_Mae" Nullable="true" MaxLength="30" />
+          <Property Type="String" Name="Nombre_Doctorado" Nullable="true" MaxLength="30" />
+          <Property Type="String" Name="Institucion_Doc" Nullable="true" MaxLength="30" />
+          <Property Type="Int32" Name="Periodo_Doc" Nullable="true" />
+          <Property Type="String" Name="Años_Titulacion_Doc" Nullable="true" MaxLength="30" />
+          <Property Type="String" Name="Nombre_Especializacion" Nullable="true" MaxLength="30" />
+          <Property Type="String" Name="Institucion_Espe" Nullable="true" MaxLength="30" />
+          <Property Type="Int32" Name="Periodo_Espe" Nullable="true" />
+          <Property Type="String" Name="Año_Titulacion_Espe" Nullable="true" MaxLength="30" />
+          <Property Type="String" Name="Nombre_Curso" Nullable="true" MaxLength="30" />
+          <Property Type="String" Name="Institucion_Curso" Nullable="true" MaxLength="30" />
+          <Property Type="Int32" Name="Horas" Nullable="true" />
+          <Property Type="String" Name="Fecha" Nullable="true" MaxLength="30" />
+          <Property Type="String" Name="Idioma" Nullable="true" MaxLength="30" />
+          <Property Type="String" Name="Habla" Nullable="true" MaxLength="30" />
+          <Property Type="String" Name="Lee" Nullable="true" MaxLength="30" />
+          <Property Type="String" Name="Escribe" Nullable="true" MaxLength="30" />
+          <Property Type="String" Name="Dominio" Nullable="true" MaxLength="30" />
+          <Property Type="String" Name="Actividad_Puesto" Nullable="false" MaxLength="30" />
+          <Property Type="String" Name="Organizacion_Empresa" Nullable="false" MaxLength="30" />
+          <Property Type="String" Name="Periodo" Nullable="false" MaxLength="30" />
+          <Property Type="String" Name="Actividad_Puesto2" Nullable="true" MaxLength="30" />
+          <Property Type="String" Name="Organizacion_Empresa2" Nullable="true" MaxLength="30" />
+          <Property Type="String" Name="Periodo2" Nullable="true" MaxLength="30" />
+          <Property Type="String" Name="Actividad_Puesto3" Nullable="true" MaxLength="30" />
+          <Property Type="String" Name="Organizacion_Empresa3" Nullable="true" MaxLength="30" />
+          <Property Type="String" Name="Periodo3" Nullable="true" MaxLength="30" />
+          <Property Type="String" Name="Actividad_Puesto_Aca" Nullable="false" MaxLength="30" />
+          <Property Type="String" Name="Institucion_Aca" Nullable="false" MaxLength="30" />
+          <Property Type="String" Name="Periodo_Aca" Nullable="false" MaxLength="30" />
+          <Property Type="String" Name="Actividad_Puesto_Aca2" Nullable="true" MaxLength="30" />
+          <Property Type="String" Name="Institucion_Aca2" Nullable="true" MaxLength="30" />
+          <Property Type="String" Name="Periodo_Aca2" Nullable="true" MaxLength="30" />
+          <Property Type="String" Name="Actividad_Puesto_Aca3" Nullable="true" MaxLength="30" />
+          <Property Type="String" Name="Institucion_Aca3" Nullable="true" MaxLength="30" />
+          <Property Type="String" Name="Periodo_Aca3" Nullable="true" MaxLength="30" />
+          <Property Type="Int32" Name="Ingenieria_Idustrial" Nullable="true" />
+          <Property Type="Int32" Name="Ingenieria_Sistemas" Nullable="true" />
+          <Property Type="Int32" Name="Tics" Nullable="true" />
+          <Property Type="Int32" Name="Ingenieria_Gestion" Nullable="true" />
+          <Property Type="Int32" Name="Ingenieria_Logistica" Nullable="true" />
+          <Property Type="Int32" Name="Ingenieria_Industrial_Dis" Nullable="true" />
+          <Property Type="Int32" Name="Contador" Nullable="true" />
+          <Property Type="Int32" Name="Ingenieria_Mecatronica" Nullable="true" />
+          <Property Type="Int32" Name="Ingenieria_Gestion_Dis" Nullable="true" />
+          <Property Type="Int32" Name="Ingenieria_Administracion" Nullable="true" />
+          <Property Type="String" Name="Nombre_Materia_Ant" Nullable="false" MaxLength="30" />
+          <Property Type="String" Name="Carrera_Ant" Nullable="false" MaxLength="30" />
+          <Property Type="String" Name="Semestre_Ant" Nullable="false" MaxLength="30" />
+          <Property Type="String" Name="Nombre_Materia_Ant2" Nullable="true" MaxLength="30" />
+          <Property Type="String" Name="Carrera_Ant2" Nullable="true" MaxLength="30" />
+          <Property Type="String" Name="Semestre_Ant2" Nullable="true" MaxLength="30" />
+          <Property Type="String" Name="Nombre_Materia_Ant3" Nullable="true" MaxLength="30" />
+          <Property Type="String" Name="Carrera_Ant3" Nullable="true" MaxLength="30" />
+          <Property Type="String" Name="Semestre_Ant3" Nullable="true" MaxLength="30" />
+          <Property Type="String" Name="Nombre_Materia_Ant4" Nullable="true" MaxLength="30" />
+          <Property Type="String" Name="Carrera_Ant4" Nullable="true" MaxLength="30" />
+          <Property Type="String" Name="Semestre_Ant4" Nullable="true" MaxLength="30" />
+          <Property Type="String" Name="Nombre_Materia_Ant5" Nullable="true" MaxLength="30" />
+          <Property Type="String" Name="Carrera_Ant5" Nullable="true" MaxLength="30" />
+          <Property Type="String" Name="Semestre_Ant5" Nullable="true" MaxLength="30" />
+          <Property Type="String" Name="Nombre_Materia_Ant6" Nullable="true" MaxLength="30" />
+          <Property Type="String" Name="Carrera_Ant6" Nullable="true" MaxLength="30" />
+          <Property Type="String" Name="Semestre_Ant6" Nullable="true" MaxLength="30" />
+          <Property Type="String" Name="Nombre_Materia_Ant7" Nullable="true" MaxLength="30" />
+          <Property Type="String" Name="Carrera_Ant7" Nullable="true" MaxLength="30" />
+          <Property Type="String" Name="Semestre_Ant7" Nullable="true" MaxLength="30" />
+          <Property Type="String" Name="Nombre_Materia_Ant8" Nullable="true" MaxLength="30" />
+          <Property Type="String" Name="Carrera_Ant8" Nullable="true" MaxLength="30" />
+          <Property Type="String" Name="Semestre_Ant8" Nullable="true" MaxLength="30" />
+          <Property Type="String" Name="Nombre_Materia_Ant9" Nullable="true" MaxLength="30" />
+          <Property Type="String" Name="Carrera_Ant9" Nullable="true" MaxLength="30" />
+          <Property Type="String" Name="Semestre_Ant9" Nullable="true" MaxLength="30" />
+          <Property Type="String" Name="Nombre_Materia_Imp" Nullable="true" MaxLength="30" />
+          <Property Type="String" Name="Carrera_Imp" Nullable="true" MaxLength="30" />
+          <Property Type="String" Name="Semestre_Imp" Nullable="true" MaxLength="30" />
+          <Property Type="String" Name="Nombre_Materia_Imp2" Nullable="true" MaxLength="30" />
+          <Property Type="String" Name="Carrera_Imp2" Nullable="true" MaxLength="30" />
+          <Property Type="String" Name="Semestre_Imp2" Nullable="true" MaxLength="30" />
+          <Property Type="String" Name="Nombre_Materia_Imp3" Nullable="true" MaxLength="30" />
+          <Property Type="String" Name="Carrera_Imp3" Nullable="true" MaxLength="30" />
+          <Property Type="String" Name="Semestre_Imp3" Nullable="true" MaxLength="30" />
+          <Property Type="String" Name="Nombre_Materia_Imp4" Nullable="true" MaxLength="30" />
+          <Property Type="String" Name="Carrera_Imp4" Nullable="true" MaxLength="30" />
+          <Property Type="String" Name="Semestre_Imp4" Nullable="true" MaxLength="30" />
+          <Property Type="String" Name="Nombre_Materia_Imp5" Nullable="true" MaxLength="30" />
+          <Property Type="String" Name="Carrera_Imp5" Nullable="true" MaxLength="30" />
+          <Property Type="String" Name="Semestre_Imp5" Nullable="true" MaxLength="30" />
+          <Property Type="String" Name="Nombre_Materia_Imp6" Nullable="true" MaxLength="30" />
+          <Property Type="String" Name="Carrera_Imp6" Nullable="true" MaxLength="30" />
+          <Property Type="String" Name="Semestre_Imp6" Nullable="true" MaxLength="30" />
+          <Property Type="String" Name="Nombre_Materia_Imp7" Nullable="true" MaxLength="30" />
+          <Property Type="String" Name="Carrera_Imp7" Nullable="true" MaxLength="30" />
+          <Property Type="String" Name="Semestre_Imp7" Nullable="true" MaxLength="30" />
+          <Property Type="String" Name="Nombre_Materia_Imp8" Nullable="true" MaxLength="30" />
+          <Property Type="String" Name="Carrera_Imp8" Nullable="true" MaxLength="30" />
+          <Property Type="String" Name="Semestre_Imp8" Nullable="true" MaxLength="30" />
+          <Property Type="String" Name="Nombre_Materia_Imp9" Nullable="true" MaxLength="30" />
+          <Property Type="String" Name="Carrera_Imp9" Nullable="true" MaxLength="30" />
+          <Property Type="String" Name="Semestre_Imp9" Nullable="true" MaxLength="30" />
+          <Property Type="String" Name="Nombre_Materia_Imp10" Nullable="true" MaxLength="30" />
+          <Property Type="String" Name="Carrera_Imp10" Nullable="true" MaxLength="30" />
+          <Property Type="String" Name="Semestre_Imp10" Nullable="true" MaxLength="30" />
+        </ComplexType>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="DisponibilidadModel3StoreContainer" CdmEntityContainer="DisponibilidadEntities3">
+          <EntitySetMapping Name="Datos_Personales">
+            <EntityTypeMapping TypeName="DisponibilidadModel3.Datos_Personales">
+              <MappingFragment StoreEntitySet="Datos_Personales">
+                <ScalarProperty Name="Id_Datos_Personales" ColumnName="Id_Datos_Personales" />
+                <ScalarProperty Name="Nombre" ColumnName="Nombre" />
+                <ScalarProperty Name="APaterno" ColumnName="APaterno" />
+                <ScalarProperty Name="AMaterno" ColumnName="AMaterno" />
+                <ScalarProperty Name="Edad" ColumnName="Edad" />
+                <ScalarProperty Name="Lugar_de_Nacimiento" ColumnName="Lugar_de_Nacimiento" />
+                <ScalarProperty Name="Estado_Civil" ColumnName="Estado_Civil" />
+                <ScalarProperty Name="CURP" ColumnName="CURP" />
+                <ScalarProperty Name="Direccion" ColumnName="Direccion" />
+                <ScalarProperty Name="Numero_Casa" ColumnName="Numero_Casa" />
+                <ScalarProperty Name="Numero_Celular" ColumnName="Numero_Celular" />
+                <ScalarProperty Name="Nombre_Licenciatura" ColumnName="Nombre_Licenciatura" />
+                <ScalarProperty Name="Institucion_Lic" ColumnName="Institucion_Lic" />
+                <ScalarProperty Name="Periodo_Lic" ColumnName="Periodo_Lic" />
+                <ScalarProperty Name="Año_Titulacion_Lic" ColumnName="Año_Titulacion_Lic" />
+                <ScalarProperty Name="Nombre_Maestria" ColumnName="Nombre_Maestria" />
+                <ScalarProperty Name="Institucion_Mae" ColumnName="Institucion_Mae" />
+                <ScalarProperty Name="Periodo_Mae" ColumnName="Periodo_Mae" />
+                <ScalarProperty Name="Año_Titulacion_Mae" ColumnName="Año_Titulacion_Mae" />
+                <ScalarProperty Name="Nombre_Doctorado" ColumnName="Nombre_Doctorado" />
+                <ScalarProperty Name="Institucion_Doc" ColumnName="Institucion_Doc" />
+                <ScalarProperty Name="Periodo_Doc" ColumnName="Periodo_Doc" />
+                <ScalarProperty Name="Años_Titulacion_Doc" ColumnName="Años_Titulacion_Doc" />
+                <ScalarProperty Name="Nombre_Especializacion" ColumnName="Nombre_Especializacion" />
+                <ScalarProperty Name="Institucion_Espe" ColumnName="Institucion_Espe" />
+                <ScalarProperty Name="Periodo_Espe" ColumnName="Periodo_Espe" />
+                <ScalarProperty Name="Año_Titulacion_Espe" ColumnName="Año_Titulacion_Espe" />
+                <ScalarProperty Name="Nombre_Curso" ColumnName="Nombre_Curso" />
+                <ScalarProperty Name="Institucion_Curso" ColumnName="Institucion_Curso" />
+                <ScalarProperty Name="Horas" ColumnName="Horas" />
+                <ScalarProperty Name="Fecha" ColumnName="Fecha" />
+                <ScalarProperty Name="Idioma" ColumnName="Idioma" />
+                <ScalarProperty Name="Habla" ColumnName="Habla" />
+                <ScalarProperty Name="Lee" ColumnName="Lee" />
+                <ScalarProperty Name="Escribe" ColumnName="Escribe" />
+                <ScalarProperty Name="Dominio" ColumnName="Dominio" />
+                <ScalarProperty Name="Actividad_Puesto" ColumnName="Actividad_Puesto" />
+                <ScalarProperty Name="Organizacion_Empresa" ColumnName="Organizacion_Empresa" />
+                <ScalarProperty Name="Periodo" ColumnName="Periodo" />
+                <ScalarProperty Name="Actividad_Puesto2" ColumnName="Actividad_Puesto2" />
+                <ScalarProperty Name="Organizacion_Empresa2" ColumnName="Organizacion_Empresa2" />
+                <ScalarProperty Name="Periodo2" ColumnName="Periodo2" />
+                <ScalarProperty Name="Actividad_Puesto3" ColumnName="Actividad_Puesto3" />
+                <ScalarProperty Name="Organizacion_Empresa3" ColumnName="Organizacion_Empresa3" />
+                <ScalarProperty Name="Periodo3" ColumnName="Periodo3" />
+                <ScalarProperty Name="Actividad_Puesto_Aca" ColumnName="Actividad_Puesto_Aca" />
+                <ScalarProperty Name="Institucion_Aca" ColumnName="Institucion_Aca" />
+                <ScalarProperty Name="Periodo_Aca" ColumnName="Periodo_Aca" />
+                <ScalarProperty Name="Actividad_Puesto_Aca2" ColumnName="Actividad_Puesto_Aca2" />
+                <ScalarProperty Name="Institucion_Aca2" ColumnName="Institucion_Aca2" />
+                <ScalarProperty Name="Periodo_Aca2" ColumnName="Periodo_Aca2" />
+                <ScalarProperty Name="Actividad_Puesto_Aca3" ColumnName="Actividad_Puesto_Aca3" />
+                <ScalarProperty Name="Institucion_Aca3" ColumnName="Institucion_Aca3" />
+                <ScalarProperty Name="Periodo_Aca3" ColumnName="Periodo_Aca3" />
+                <ScalarProperty Name="Ingenieria_Idustrial" ColumnName="Ingenieria_Idustrial" />
+                <ScalarProperty Name="Ingenieria_Sistemas" ColumnName="Ingenieria_Sistemas" />
+                <ScalarProperty Name="Tics" ColumnName="Tics" />
+                <ScalarProperty Name="Ingenieria_Gestion" ColumnName="Ingenieria_Gestion" />
+                <ScalarProperty Name="Ingenieria_Logistica" ColumnName="Ingenieria_Logistica" />
+                <ScalarProperty Name="Ingenieria_Industrial_Dis" ColumnName="Ingenieria_Industrial_Dis" />
+                <ScalarProperty Name="Contador" ColumnName="Contador" />
+                <ScalarProperty Name="Ingenieria_Mecatronica" ColumnName="Ingenieria_Mecatronica" />
+                <ScalarProperty Name="Ingenieria_Gestion_Dis" ColumnName="Ingenieria_Gestion_Dis" />
+                <ScalarProperty Name="Ingenieria_Administracion" ColumnName="Ingenieria_Administracion" />
+                <ScalarProperty Name="Nombre_Materia_Ant" ColumnName="Nombre_Materia_Ant" />
+                <ScalarProperty Name="Carrera_Ant" ColumnName="Carrera_Ant" />
+                <ScalarProperty Name="Semestre_Ant" ColumnName="Semestre_Ant" />
+                <ScalarProperty Name="Nombre_Materia_Ant2" ColumnName="Nombre_Materia_Ant2" />
+                <ScalarProperty Name="Carrera_Ant2" ColumnName="Carrera_Ant2" />
+                <ScalarProperty Name="Semestre_Ant2" ColumnName="Semestre_Ant2" />
+                <ScalarProperty Name="Nombre_Materia_Ant3" ColumnName="Nombre_Materia_Ant3" />
+                <ScalarProperty Name="Carrera_Ant3" ColumnName="Carrera_Ant3" />
+                <ScalarProperty Name="Semestre_Ant3" ColumnName="Semestre_Ant3" />
+                <ScalarProperty Name="Nombre_Materia_Ant4" ColumnName="Nombre_Materia_Ant4" />
+                <ScalarProperty Name="Carrera_Ant4" ColumnName="Carrera_Ant4" />
+                <ScalarProperty Name="Semestre_Ant4" ColumnName="Semestre_Ant4" />
+                <ScalarProperty Name="Nombre_Materia_Ant5" ColumnName="Nombre_Materia_Ant5" />
+                <ScalarProperty Name="Carrera_Ant5" ColumnName="Carrera_Ant5" />
+                <ScalarProperty Name="Semestre_Ant5" ColumnName="Semestre_Ant5" />
+                <ScalarProperty Name="Nombre_Materia_Ant6" ColumnName="Nombre_Materia_Ant6" />
+                <ScalarProperty Name="Carrera_Ant6" ColumnName="Carrera_Ant6" />
+                <ScalarProperty Name="Semestre_Ant6" ColumnName="Semestre_Ant6" />
+                <ScalarProperty Name="Nombre_Materia_Ant7" ColumnName="Nombre_Materia_Ant7" />
+                <ScalarProperty Name="Carrera_Ant7" ColumnName="Carrera_Ant7" />
+                <ScalarProperty Name="Semestre_Ant7" ColumnName="Semestre_Ant7" />
+                <ScalarProperty Name="Nombre_Materia_Ant8" ColumnName="Nombre_Materia_Ant8" />
+                <ScalarProperty Name="Carrera_Ant8" ColumnName="Carrera_Ant8" />
+                <ScalarProperty Name="Semestre_Ant8" ColumnName="Semestre_Ant8" />
+                <ScalarProperty Name="Nombre_Materia_Ant9" ColumnName="Nombre_Materia_Ant9" />
+                <ScalarProperty Name="Carrera_Ant9" ColumnName="Carrera_Ant9" />
+                <ScalarProperty Name="Semestre_Ant9" ColumnName="Semestre_Ant9" />
+                <ScalarProperty Name="Nombre_Materia_Imp" ColumnName="Nombre_Materia_Imp" />
+                <ScalarProperty Name="Carrera_Imp" ColumnName="Carrera_Imp" />
+                <ScalarProperty Name="Semestre_Imp" ColumnName="Semestre_Imp" />
+                <ScalarProperty Name="Nombre_Materia_Imp2" ColumnName="Nombre_Materia_Imp2" />
+                <ScalarProperty Name="Carrera_Imp2" ColumnName="Carrera_Imp2" />
+                <ScalarProperty Name="Semestre_Imp2" ColumnName="Semestre_Imp2" />
+                <ScalarProperty Name="Nombre_Materia_Imp3" ColumnName="Nombre_Materia_Imp3" />
+                <ScalarProperty Name="Carrera_Imp3" ColumnName="Carrera_Imp3" />
+                <ScalarProperty Name="Semestre_Imp3" ColumnName="Semestre_Imp3" />
+                <ScalarProperty Name="Nombre_Materia_Imp4" ColumnName="Nombre_Materia_Imp4" />
+                <ScalarProperty Name="Carrera_Imp4" ColumnName="Carrera_Imp4" />
+                <ScalarProperty Name="Semestre_Imp4" ColumnName="Semestre_Imp4" />
+                <ScalarProperty Name="Nombre_Materia_Imp5" ColumnName="Nombre_Materia_Imp5" />
+                <ScalarProperty Name="Carrera_Imp5" ColumnName="Carrera_Imp5" />
+                <ScalarProperty Name="Semestre_Imp5" ColumnName="Semestre_Imp5" />
+                <ScalarProperty Name="Nombre_Materia_Imp6" ColumnName="Nombre_Materia_Imp6" />
+                <ScalarProperty Name="Carrera_Imp6" ColumnName="Carrera_Imp6" />
+                <ScalarProperty Name="Semestre_Imp6" ColumnName="Semestre_Imp6" />
+                <ScalarProperty Name="Nombre_Materia_Imp7" ColumnName="Nombre_Materia_Imp7" />
+                <ScalarProperty Name="Carrera_Imp7" ColumnName="Carrera_Imp7" />
+                <ScalarProperty Name="Semestre_Imp7" ColumnName="Semestre_Imp7" />
+                <ScalarProperty Name="Nombre_Materia_Imp8" ColumnName="Nombre_Materia_Imp8" />
+                <ScalarProperty Name="Carrera_Imp8" ColumnName="Carrera_Imp8" />
+                <ScalarProperty Name="Semestre_Imp8" ColumnName="Semestre_Imp8" />
+                <ScalarProperty Name="Nombre_Materia_Imp9" ColumnName="Nombre_Materia_Imp9" />
+                <ScalarProperty Name="Carrera_Imp9" ColumnName="Carrera_Imp9" />
+                <ScalarProperty Name="Semestre_Imp9" ColumnName="Semestre_Imp9" />
+                <ScalarProperty Name="Nombre_Materia_Imp10" ColumnName="Nombre_Materia_Imp10" />
+                <ScalarProperty Name="Carrera_Imp10" ColumnName="Carrera_Imp10" />
+                <ScalarProperty Name="Semestre_Imp10" ColumnName="Semestre_Imp10" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <FunctionImportMapping FunctionImportName="SP_Datos_Personales_Add" FunctionName="DisponibilidadModel3.Store.SP_Datos_Personales_Add" />
+          <FunctionImportMapping FunctionImportName="SP_Datos_Personales_Delete" FunctionName="DisponibilidadModel3.Store.SP_Datos_Personales_Delete" />
+          <FunctionImportMapping FunctionImportName="SP_Datos_Personales_GetAll" FunctionName="DisponibilidadModel3.Store.SP_Datos_Personales_GetAll">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="DisponibilidadModel3.SP_Datos_Personales_GetAll_Result">
+                <ScalarProperty Name="Id_Datos_Personales" ColumnName="Id_Datos_Personales" />
+                <ScalarProperty Name="Nombre" ColumnName="Nombre" />
+                <ScalarProperty Name="APaterno" ColumnName="APaterno" />
+                <ScalarProperty Name="AMaterno" ColumnName="AMaterno" />
+                <ScalarProperty Name="Edad" ColumnName="Edad" />
+                <ScalarProperty Name="Lugar_de_Nacimiento" ColumnName="Lugar_de_Nacimiento" />
+                <ScalarProperty Name="Estado_Civil" ColumnName="Estado_Civil" />
+                <ScalarProperty Name="CURP" ColumnName="CURP" />
+                <ScalarProperty Name="Direccion" ColumnName="Direccion" />
+                <ScalarProperty Name="Numero_Casa" ColumnName="Numero_Casa" />
+                <ScalarProperty Name="Numero_Celular" ColumnName="Numero_Celular" />
+                <ScalarProperty Name="Nombre_Licenciatura" ColumnName="Nombre_Licenciatura" />
+                <ScalarProperty Name="Institucion_Lic" ColumnName="Institucion_Lic" />
+                <ScalarProperty Name="Periodo_Lic" ColumnName="Periodo_Lic" />
+                <ScalarProperty Name="Año_Titulacion_Lic" ColumnName="Año_Titulacion_Lic" />
+                <ScalarProperty Name="Nombre_Maestria" ColumnName="Nombre_Maestria" />
+                <ScalarProperty Name="Institucion_Mae" ColumnName="Institucion_Mae" />
+                <ScalarProperty Name="Periodo_Mae" ColumnName="Periodo_Mae" />
+                <ScalarProperty Name="Año_Titulacion_Mae" ColumnName="Año_Titulacion_Mae" />
+                <ScalarProperty Name="Nombre_Doctorado" ColumnName="Nombre_Doctorado" />
+                <ScalarProperty Name="Institucion_Doc" ColumnName="Institucion_Doc" />
+                <ScalarProperty Name="Periodo_Doc" ColumnName="Periodo_Doc" />
+                <ScalarProperty Name="Años_Titulacion_Doc" ColumnName="Años_Titulacion_Doc" />
+                <ScalarProperty Name="Nombre_Especializacion" ColumnName="Nombre_Especializacion" />
+                <ScalarProperty Name="Institucion_Espe" ColumnName="Institucion_Espe" />
+                <ScalarProperty Name="Periodo_Espe" ColumnName="Periodo_Espe" />
+                <ScalarProperty Name="Año_Titulacion_Espe" ColumnName="Año_Titulacion_Espe" />
+                <ScalarProperty Name="Nombre_Curso" ColumnName="Nombre_Curso" />
+                <ScalarProperty Name="Institucion_Curso" ColumnName="Institucion_Curso" />
+                <ScalarProperty Name="Horas" ColumnName="Horas" />
+                <ScalarProperty Name="Fecha" ColumnName="Fecha" />
+                <ScalarProperty Name="Idioma" ColumnName="Idioma" />
+                <ScalarProperty Name="Habla" ColumnName="Habla" />
+                <ScalarProperty Name="Lee" ColumnName="Lee" />
+                <ScalarProperty Name="Escribe" ColumnName="Escribe" />
+                <ScalarProperty Name="Dominio" ColumnName="Dominio" />
+                <ScalarProperty Name="Actividad_Puesto" ColumnName="Actividad_Puesto" />
+                <ScalarProperty Name="Organizacion_Empresa" ColumnName="Organizacion_Empresa" />
+                <ScalarProperty Name="Periodo" ColumnName="Periodo" />
+                <ScalarProperty Name="Actividad_Puesto2" ColumnName="Actividad_Puesto2" />
+                <ScalarProperty Name="Organizacion_Empresa2" ColumnName="Organizacion_Empresa2" />
+                <ScalarProperty Name="Periodo2" ColumnName="Periodo2" />
+                <ScalarProperty Name="Actividad_Puesto3" ColumnName="Actividad_Puesto3" />
+                <ScalarProperty Name="Organizacion_Empresa3" ColumnName="Organizacion_Empresa3" />
+                <ScalarProperty Name="Periodo3" ColumnName="Periodo3" />
+                <ScalarProperty Name="Actividad_Puesto_Aca" ColumnName="Actividad_Puesto_Aca" />
+                <ScalarProperty Name="Institucion_Aca" ColumnName="Institucion_Aca" />
+                <ScalarProperty Name="Periodo_Aca" ColumnName="Periodo_Aca" />
+                <ScalarProperty Name="Actividad_Puesto_Aca2" ColumnName="Actividad_Puesto_Aca2" />
+                <ScalarProperty Name="Institucion_Aca2" ColumnName="Institucion_Aca2" />
+                <ScalarProperty Name="Periodo_Aca2" ColumnName="Periodo_Aca2" />
+                <ScalarProperty Name="Actividad_Puesto_Aca3" ColumnName="Actividad_Puesto_Aca3" />
+                <ScalarProperty Name="Institucion_Aca3" ColumnName="Institucion_Aca3" />
+                <ScalarProperty Name="Periodo_Aca3" ColumnName="Periodo_Aca3" />
+                <ScalarProperty Name="Ingenieria_Idustrial" ColumnName="Ingenieria_Idustrial" />
+                <ScalarProperty Name="Ingenieria_Sistemas" ColumnName="Ingenieria_Sistemas" />
+                <ScalarProperty Name="Tics" ColumnName="Tics" />
+                <ScalarProperty Name="Ingenieria_Gestion" ColumnName="Ingenieria_Gestion" />
+                <ScalarProperty Name="Ingenieria_Logistica" ColumnName="Ingenieria_Logistica" />
+                <ScalarProperty Name="Ingenieria_Industrial_Dis" ColumnName="Ingenieria_Industrial_Dis" />
+                <ScalarProperty Name="Contador" ColumnName="Contador" />
+                <ScalarProperty Name="Ingenieria_Mecatronica" ColumnName="Ingenieria_Mecatronica" />
+                <ScalarProperty Name="Ingenieria_Gestion_Dis" ColumnName="Ingenieria_Gestion_Dis" />
+                <ScalarProperty Name="Ingenieria_Administracion" ColumnName="Ingenieria_Administracion" />
+                <ScalarProperty Name="Nombre_Materia_Ant" ColumnName="Nombre_Materia_Ant" />
+                <ScalarProperty Name="Carrera_Ant" ColumnName="Carrera_Ant" />
+                <ScalarProperty Name="Semestre_Ant" ColumnName="Semestre_Ant" />
+                <ScalarProperty Name="Nombre_Materia_Ant2" ColumnName="Nombre_Materia_Ant2" />
+                <ScalarProperty Name="Carrera_Ant2" ColumnName="Carrera_Ant2" />
+                <ScalarProperty Name="Semestre_Ant2" ColumnName="Semestre_Ant2" />
+                <ScalarProperty Name="Nombre_Materia_Ant3" ColumnName="Nombre_Materia_Ant3" />
+                <ScalarProperty Name="Carrera_Ant3" ColumnName="Carrera_Ant3" />
+                <ScalarProperty Name="Semestre_Ant3" ColumnName="Semestre_Ant3" />
+                <ScalarProperty Name="Nombre_Materia_Ant4" ColumnName="Nombre_Materia_Ant4" />
+                <ScalarProperty Name="Carrera_Ant4" ColumnName="Carrera_Ant4" />
+                <ScalarProperty Name="Semestre_Ant4" ColumnName="Semestre_Ant4" />
+                <ScalarProperty Name="Nombre_Materia_Ant5" ColumnName="Nombre_Materia_Ant5" />
+                <ScalarProperty Name="Carrera_Ant5" ColumnName="Carrera_Ant5" />
+                <ScalarProperty Name="Semestre_Ant5" ColumnName="Semestre_Ant5" />
+                <ScalarProperty Name="Nombre_Materia_Ant6" ColumnName="Nombre_Materia_Ant6" />
+                <ScalarProperty Name="Carrera_Ant6" ColumnName="Carrera_Ant6" />
+                <ScalarProperty Name="Semestre_Ant6" ColumnName="Semestre_Ant6" />
+                <ScalarProperty Name="Nombre_Materia_Ant7" ColumnName="Nombre_Materia_Ant7" />
+                <ScalarProperty Name="Carrera_Ant7" ColumnName="Carrera_Ant7" />
+                <ScalarProperty Name="Semestre_Ant7" ColumnName="Semestre_Ant7" />
+                <ScalarProperty Name="Nombre_Materia_Ant8" ColumnName="Nombre_Materia_Ant8" />
+                <ScalarProperty Name="Carrera_Ant8" ColumnName="Carrera_Ant8" />
+                <ScalarProperty Name="Semestre_Ant8" ColumnName="Semestre_Ant8" />
+                <ScalarProperty Name="Nombre_Materia_Ant9" ColumnName="Nombre_Materia_Ant9" />
+                <ScalarProperty Name="Carrera_Ant9" ColumnName="Carrera_Ant9" />
+                <ScalarProperty Name="Semestre_Ant9" ColumnName="Semestre_Ant9" />
+                <ScalarProperty Name="Nombre_Materia_Imp" ColumnName="Nombre_Materia_Imp" />
+                <ScalarProperty Name="Carrera_Imp" ColumnName="Carrera_Imp" />
+                <ScalarProperty Name="Semestre_Imp" ColumnName="Semestre_Imp" />
+                <ScalarProperty Name="Nombre_Materia_Imp2" ColumnName="Nombre_Materia_Imp2" />
+                <ScalarProperty Name="Carrera_Imp2" ColumnName="Carrera_Imp2" />
+                <ScalarProperty Name="Semestre_Imp2" ColumnName="Semestre_Imp2" />
+                <ScalarProperty Name="Nombre_Materia_Imp3" ColumnName="Nombre_Materia_Imp3" />
+                <ScalarProperty Name="Carrera_Imp3" ColumnName="Carrera_Imp3" />
+                <ScalarProperty Name="Semestre_Imp3" ColumnName="Semestre_Imp3" />
+                <ScalarProperty Name="Nombre_Materia_Imp4" ColumnName="Nombre_Materia_Imp4" />
+                <ScalarProperty Name="Carrera_Imp4" ColumnName="Carrera_Imp4" />
+                <ScalarProperty Name="Semestre_Imp4" ColumnName="Semestre_Imp4" />
+                <ScalarProperty Name="Nombre_Materia_Imp5" ColumnName="Nombre_Materia_Imp5" />
+                <ScalarProperty Name="Carrera_Imp5" ColumnName="Carrera_Imp5" />
+                <ScalarProperty Name="Semestre_Imp5" ColumnName="Semestre_Imp5" />
+                <ScalarProperty Name="Nombre_Materia_Imp6" ColumnName="Nombre_Materia_Imp6" />
+                <ScalarProperty Name="Carrera_Imp6" ColumnName="Carrera_Imp6" />
+                <ScalarProperty Name="Semestre_Imp6" ColumnName="Semestre_Imp6" />
+                <ScalarProperty Name="Nombre_Materia_Imp7" ColumnName="Nombre_Materia_Imp7" />
+                <ScalarProperty Name="Carrera_Imp7" ColumnName="Carrera_Imp7" />
+                <ScalarProperty Name="Semestre_Imp7" ColumnName="Semestre_Imp7" />
+                <ScalarProperty Name="Nombre_Materia_Imp8" ColumnName="Nombre_Materia_Imp8" />
+                <ScalarProperty Name="Carrera_Imp8" ColumnName="Carrera_Imp8" />
+                <ScalarProperty Name="Semestre_Imp8" ColumnName="Semestre_Imp8" />
+                <ScalarProperty Name="Nombre_Materia_Imp9" ColumnName="Nombre_Materia_Imp9" />
+                <ScalarProperty Name="Carrera_Imp9" ColumnName="Carrera_Imp9" />
+                <ScalarProperty Name="Semestre_Imp9" ColumnName="Semestre_Imp9" />
+                <ScalarProperty Name="Nombre_Materia_Imp10" ColumnName="Nombre_Materia_Imp10" />
+                <ScalarProperty Name="Carrera_Imp10" ColumnName="Carrera_Imp10" />
+                <ScalarProperty Name="Semestre_Imp10" ColumnName="Semestre_Imp10" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="SP_Datos_Personales_GetById" FunctionName="DisponibilidadModel3.Store.SP_Datos_Personales_GetById">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="DisponibilidadModel3.SP_Datos_Personales_GetById_Result">
+                <ScalarProperty Name="Nombre" ColumnName="Nombre" />
+                <ScalarProperty Name="APaterno" ColumnName="APaterno" />
+                <ScalarProperty Name="AMaterno" ColumnName="AMaterno" />
+                <ScalarProperty Name="Edad" ColumnName="Edad" />
+                <ScalarProperty Name="Lugar_de_Nacimiento" ColumnName="Lugar_de_Nacimiento" />
+                <ScalarProperty Name="Estado_Civil" ColumnName="Estado_Civil" />
+                <ScalarProperty Name="CURP" ColumnName="CURP" />
+                <ScalarProperty Name="Direccion" ColumnName="Direccion" />
+                <ScalarProperty Name="Numero_Casa" ColumnName="Numero_Casa" />
+                <ScalarProperty Name="Numero_Celular" ColumnName="Numero_Celular" />
+                <ScalarProperty Name="Nombre_Licenciatura" ColumnName="Nombre_Licenciatura" />
+                <ScalarProperty Name="Institucion_Lic" ColumnName="Institucion_Lic" />
+                <ScalarProperty Name="Periodo_Lic" ColumnName="Periodo_Lic" />
+                <ScalarProperty Name="Año_Titulacion_Lic" ColumnName="Año_Titulacion_Lic" />
+                <ScalarProperty Name="Nombre_Maestria" ColumnName="Nombre_Maestria" />
+                <ScalarProperty Name="Institucion_Mae" ColumnName="Institucion_Mae" />
+                <ScalarProperty Name="Periodo_Mae" ColumnName="Periodo_Mae" />
+                <ScalarProperty Name="Año_Titulacion_Mae" ColumnName="Año_Titulacion_Mae" />
+                <ScalarProperty Name="Nombre_Doctorado" ColumnName="Nombre_Doctorado" />
+                <ScalarProperty Name="Institucion_Doc" ColumnName="Institucion_Doc" />
+                <ScalarProperty Name="Periodo_Doc" ColumnName="Periodo_Doc" />
+                <ScalarProperty Name="Años_Titulacion_Doc" ColumnName="Años_Titulacion_Doc" />
+                <ScalarProperty Name="Nombre_Especializacion" ColumnName="Nombre_Especializacion" />
+                <ScalarProperty Name="Institucion_Espe" ColumnName="Institucion_Espe" />
+                <ScalarProperty Name="Periodo_Espe" ColumnName="Periodo_Espe" />
+                <ScalarProperty Name="Año_Titulacion_Espe" ColumnName="Año_Titulacion_Espe" />
+                <ScalarProperty Name="Nombre_Curso" ColumnName="Nombre_Curso" />
+                <ScalarProperty Name="Institucion_Curso" ColumnName="Institucion_Curso" />
+                <ScalarProperty Name="Horas" ColumnName="Horas" />
+                <ScalarProperty Name="Fecha" ColumnName="Fecha" />
+                <ScalarProperty Name="Idioma" ColumnName="Idioma" />
+                <ScalarProperty Name="Habla" ColumnName="Habla" />
+                <ScalarProperty Name="Lee" ColumnName="Lee" />
+                <ScalarProperty Name="Escribe" ColumnName="Escribe" />
+                <ScalarProperty Name="Dominio" ColumnName="Dominio" />
+                <ScalarProperty Name="Actividad_Puesto" ColumnName="Actividad_Puesto" />
+                <ScalarProperty Name="Organizacion_Empresa" ColumnName="Organizacion_Empresa" />
+                <ScalarProperty Name="Periodo" ColumnName="Periodo" />
+                <ScalarProperty Name="Actividad_Puesto2" ColumnName="Actividad_Puesto2" />
+                <ScalarProperty Name="Organizacion_Empresa2" ColumnName="Organizacion_Empresa2" />
+                <ScalarProperty Name="Periodo2" ColumnName="Periodo2" />
+                <ScalarProperty Name="Actividad_Puesto3" ColumnName="Actividad_Puesto3" />
+                <ScalarProperty Name="Organizacion_Empresa3" ColumnName="Organizacion_Empresa3" />
+                <ScalarProperty Name="Periodo3" ColumnName="Periodo3" />
+                <ScalarProperty Name="Actividad_Puesto_Aca" ColumnName="Actividad_Puesto_Aca" />
+                <ScalarProperty Name="Institucion_Aca" ColumnName="Institucion_Aca" />
+                <ScalarProperty Name="Periodo_Aca" ColumnName="Periodo_Aca" />
+                <ScalarProperty Name="Actividad_Puesto_Aca2" ColumnName="Actividad_Puesto_Aca2" />
+                <ScalarProperty Name="Institucion_Aca2" ColumnName="Institucion_Aca2" />
+                <ScalarProperty Name="Periodo_Aca2" ColumnName="Periodo_Aca2" />
+                <ScalarProperty Name="Actividad_Puesto_Aca3" ColumnName="Actividad_Puesto_Aca3" />
+                <ScalarProperty Name="Institucion_Aca3" ColumnName="Institucion_Aca3" />
+                <ScalarProperty Name="Periodo_Aca3" ColumnName="Periodo_Aca3" />
+                <ScalarProperty Name="Ingenieria_Idustrial" ColumnName="Ingenieria_Idustrial" />
+                <ScalarProperty Name="Ingenieria_Sistemas" ColumnName="Ingenieria_Sistemas" />
+                <ScalarProperty Name="Tics" ColumnName="Tics" />
+                <ScalarProperty Name="Ingenieria_Gestion" ColumnName="Ingenieria_Gestion" />
+                <ScalarProperty Name="Ingenieria_Logistica" ColumnName="Ingenieria_Logistica" />
+                <ScalarProperty Name="Ingenieria_Industrial_Dis" ColumnName="Ingenieria_Industrial_Dis" />
+                <ScalarProperty Name="Contador" ColumnName="Contador" />
+                <ScalarProperty Name="Ingenieria_Mecatronica" ColumnName="Ingenieria_Mecatronica" />
+                <ScalarProperty Name="Ingenieria_Gestion_Dis" ColumnName="Ingenieria_Gestion_Dis" />
+                <ScalarProperty Name="Ingenieria_Administracion" ColumnName="Ingenieria_Administracion" />
+                <ScalarProperty Name="Nombre_Materia_Ant" ColumnName="Nombre_Materia_Ant" />
+                <ScalarProperty Name="Carrera_Ant" ColumnName="Carrera_Ant" />
+                <ScalarProperty Name="Semestre_Ant" ColumnName="Semestre_Ant" />
+                <ScalarProperty Name="Nombre_Materia_Ant2" ColumnName="Nombre_Materia_Ant2" />
+                <ScalarProperty Name="Carrera_Ant2" ColumnName="Carrera_Ant2" />
+                <ScalarProperty Name="Semestre_Ant2" ColumnName="Semestre_Ant2" />
+                <ScalarProperty Name="Nombre_Materia_Ant3" ColumnName="Nombre_Materia_Ant3" />
+                <ScalarProperty Name="Carrera_Ant3" ColumnName="Carrera_Ant3" />
+                <ScalarProperty Name="Semestre_Ant3" ColumnName="Semestre_Ant3" />
+                <ScalarProperty Name="Nombre_Materia_Ant4" ColumnName="Nombre_Materia_Ant4" />
+                <ScalarProperty Name="Carrera_Ant4" ColumnName="Carrera_Ant4" />
+                <ScalarProperty Name="Semestre_Ant4" ColumnName="Semestre_Ant4" />
+                <ScalarProperty Name="Nombre_Materia_Ant5" ColumnName="Nombre_Materia_Ant5" />
+                <ScalarProperty Name="Carrera_Ant5" ColumnName="Carrera_Ant5" />
+                <ScalarProperty Name="Semestre_Ant5" ColumnName="Semestre_Ant5" />
+                <ScalarProperty Name="Nombre_Materia_Ant6" ColumnName="Nombre_Materia_Ant6" />
+                <ScalarProperty Name="Carrera_Ant6" ColumnName="Carrera_Ant6" />
+                <ScalarProperty Name="Semestre_Ant6" ColumnName="Semestre_Ant6" />
+                <ScalarProperty Name="Nombre_Materia_Ant7" ColumnName="Nombre_Materia_Ant7" />
+                <ScalarProperty Name="Carrera_Ant7" ColumnName="Carrera_Ant7" />
+                <ScalarProperty Name="Semestre_Ant7" ColumnName="Semestre_Ant7" />
+                <ScalarProperty Name="Nombre_Materia_Ant8" ColumnName="Nombre_Materia_Ant8" />
+                <ScalarProperty Name="Carrera_Ant8" ColumnName="Carrera_Ant8" />
+                <ScalarProperty Name="Semestre_Ant8" ColumnName="Semestre_Ant8" />
+                <ScalarProperty Name="Nombre_Materia_Ant9" ColumnName="Nombre_Materia_Ant9" />
+                <ScalarProperty Name="Carrera_Ant9" ColumnName="Carrera_Ant9" />
+                <ScalarProperty Name="Semestre_Ant9" ColumnName="Semestre_Ant9" />
+                <ScalarProperty Name="Nombre_Materia_Imp" ColumnName="Nombre_Materia_Imp" />
+                <ScalarProperty Name="Carrera_Imp" ColumnName="Carrera_Imp" />
+                <ScalarProperty Name="Semestre_Imp" ColumnName="Semestre_Imp" />
+                <ScalarProperty Name="Nombre_Materia_Imp2" ColumnName="Nombre_Materia_Imp2" />
+                <ScalarProperty Name="Carrera_Imp2" ColumnName="Carrera_Imp2" />
+                <ScalarProperty Name="Semestre_Imp2" ColumnName="Semestre_Imp2" />
+                <ScalarProperty Name="Nombre_Materia_Imp3" ColumnName="Nombre_Materia_Imp3" />
+                <ScalarProperty Name="Carrera_Imp3" ColumnName="Carrera_Imp3" />
+                <ScalarProperty Name="Semestre_Imp3" ColumnName="Semestre_Imp3" />
+                <ScalarProperty Name="Nombre_Materia_Imp4" ColumnName="Nombre_Materia_Imp4" />
+                <ScalarProperty Name="Carrera_Imp4" ColumnName="Carrera_Imp4" />
+                <ScalarProperty Name="Semestre_Imp4" ColumnName="Semestre_Imp4" />
+                <ScalarProperty Name="Nombre_Materia_Imp5" ColumnName="Nombre_Materia_Imp5" />
+                <ScalarProperty Name="Carrera_Imp5" ColumnName="Carrera_Imp5" />
+                <ScalarProperty Name="Semestre_Imp5" ColumnName="Semestre_Imp5" />
+                <ScalarProperty Name="Nombre_Materia_Imp6" ColumnName="Nombre_Materia_Imp6" />
+                <ScalarProperty Name="Carrera_Imp6" ColumnName="Carrera_Imp6" />
+                <ScalarProperty Name="Semestre_Imp6" ColumnName="Semestre_Imp6" />
+                <ScalarProperty Name="Nombre_Materia_Imp7" ColumnName="Nombre_Materia_Imp7" />
+                <ScalarProperty Name="Carrera_Imp7" ColumnName="Carrera_Imp7" />
+                <ScalarProperty Name="Semestre_Imp7" ColumnName="Semestre_Imp7" />
+                <ScalarProperty Name="Nombre_Materia_Imp8" ColumnName="Nombre_Materia_Imp8" />
+                <ScalarProperty Name="Carrera_Imp8" ColumnName="Carrera_Imp8" />
+                <ScalarProperty Name="Semestre_Imp8" ColumnName="Semestre_Imp8" />
+                <ScalarProperty Name="Nombre_Materia_Imp9" ColumnName="Nombre_Materia_Imp9" />
+                <ScalarProperty Name="Carrera_Imp9" ColumnName="Carrera_Imp9" />
+                <ScalarProperty Name="Semestre_Imp9" ColumnName="Semestre_Imp9" />
+                <ScalarProperty Name="Nombre_Materia_Imp10" ColumnName="Nombre_Materia_Imp10" />
+                <ScalarProperty Name="Carrera_Imp10" ColumnName="Carrera_Imp10" />
+                <ScalarProperty Name="Semestre_Imp10" ColumnName="Semestre_Imp10" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="false" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="Ninguno" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

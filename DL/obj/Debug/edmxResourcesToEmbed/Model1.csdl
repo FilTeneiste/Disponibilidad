@@ -1,0 +1,506 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="DisponibilidadModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="Datos_Personales">
+    <Key>
+      <PropertyRef Name="Id_Datos_Personales" />
+    </Key>
+    <Property Name="Id_Datos_Personales" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Nombre" Type="String" MaxLength="25" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="APaterno" Type="String" MaxLength="25" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="AMaterno" Type="String" MaxLength="25" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Edad" Type="Int32" Nullable="false" />
+    <Property Name="Lugar_de_Nacimiento" Type="String" MaxLength="30" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Estado_Civil" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="CURP" Type="String" MaxLength="30" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Direccion" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Numero_Casa" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="Numero_Celular" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="Nombre_Licenciatura" Type="String" MaxLength="25" FixedLength="false" Unicode="false" />
+    <Property Name="Institucion_Lic" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="Periodo_Lic" Type="Int32" />
+    <Property Name="Año_Titulacion_Lic" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="Nombre_Maestria" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="Institucion_Mae" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="Periodo_Mae" Type="Int32" />
+    <Property Name="Año_Titulacion_Mae" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="Nombre_Doctorado" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="Institucion_Doc" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="Periodo_Doc" Type="Int32" />
+    <Property Name="Años_Titulacion_Doc" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="Nombre_Especializacion" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="Institucion_Espe" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="Periodo_Espe" Type="Int32" />
+    <Property Name="Año_Titulacion_Espe" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="Nombre_Curso" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="Institucion_Curso" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="Horas" Type="Int32" />
+    <Property Name="Fecha" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="Idioma" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="Habla" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="Lee" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="Escribe" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="Dominio" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="Actividad_Puesto" Type="String" MaxLength="30" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Organizacion_Empresa" Type="String" MaxLength="30" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Periodo" Type="String" MaxLength="30" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Actividad_Puesto2" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="Organizacion_Empresa2" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="Periodo2" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="Actividad_Puesto3" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="Organizacion_Empresa3" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="Periodo3" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="Actividad_Puesto_Aca" Type="String" MaxLength="30" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Institucion_Aca" Type="String" MaxLength="30" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Periodo_Aca" Type="String" MaxLength="30" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Actividad_Puesto_Aca2" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="Institucion_Aca2" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="Periodo_Aca2" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="Actividad_Puesto_Aca3" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="Institucion_Aca3" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="Periodo_Aca3" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="Ingenieria_Idustrial" Type="Int32" />
+    <Property Name="Ingenieria_Sistemas" Type="Int32" />
+    <Property Name="Tics" Type="Int32" />
+    <Property Name="Ingenieria_Gestion" Type="Int32" />
+    <Property Name="Ingenieria_Logistica" Type="Int32" />
+    <Property Name="Ingenieria_Industrial_Dis" Type="Int32" />
+    <Property Name="Contador" Type="Int32" />
+    <Property Name="Ingenieria_Mecatronica" Type="Int32" />
+    <Property Name="Ingenieria_Gestion_Dis" Type="Int32" />
+    <Property Name="Ingenieria_Administracion" Type="Int32" />
+    <Property Name="Nombre_Materia_Ant" Type="String" MaxLength="30" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Carrera_Ant" Type="String" MaxLength="30" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Semestre_Ant" Type="String" MaxLength="30" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Nombre_Materia_Ant2" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="Carrera_Ant2" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="Semestre_Ant2" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="Nombre_Materia_Ant3" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="Carrera_Ant3" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="Semestre_Ant3" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="Nombre_Materia_Ant4" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="Carrera_Ant4" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="Semestre_Ant4" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="Nombre_Materia_Ant5" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="Carrera_Ant5" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="Semestre_Ant5" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="Nombre_Materia_Ant6" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="Carrera_Ant6" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="Semestre_Ant6" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="Nombre_Materia_Ant7" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="Carrera_Ant7" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="Semestre_Ant7" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="Nombre_Materia_Ant8" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="Carrera_Ant8" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="Semestre_Ant8" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="Nombre_Materia_Ant9" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="Carrera_Ant9" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="Semestre_Ant9" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="Nombre_Materia_Imp" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="Carrera_Imp" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="Semestre_Imp" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="Nombre_Materia_Imp2" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="Carrera_Imp2" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="Semestre_Imp2" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="Nombre_Materia_Imp3" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="Carrera_Imp3" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="Semestre_Imp3" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="Nombre_Materia_Imp4" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="Carrera_Imp4" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="Semestre_Imp4" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="Nombre_Materia_Imp5" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="Carrera_Imp5" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="Semestre_Imp5" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="Nombre_Materia_Imp6" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="Carrera_Imp6" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="Semestre_Imp6" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="Nombre_Materia_Imp7" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="Carrera_Imp7" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="Semestre_Imp7" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="Nombre_Materia_Imp8" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="Carrera_Imp8" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="Semestre_Imp8" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="Nombre_Materia_Imp9" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="Carrera_Imp9" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="Semestre_Imp9" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="Nombre_Materia_Imp10" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="Carrera_Imp10" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="Semestre_Imp10" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityContainer Name="DisponibilidadEntities2" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Datos_Personales" EntityType="Self.Datos_Personales" />
+    <FunctionImport Name="SP_Datos_Personales_Add">
+      <Parameter Name="Nombre" Mode="In" Type="String" />
+      <Parameter Name="APaterno" Mode="In" Type="String" />
+      <Parameter Name="AMaterno" Mode="In" Type="String" />
+      <Parameter Name="Edad" Mode="In" Type="Int32" />
+      <Parameter Name="Lugar_de_Nacimiento" Mode="In" Type="String" />
+      <Parameter Name="Estado_Civil" Mode="In" Type="String" />
+      <Parameter Name="CURP" Mode="In" Type="String" />
+      <Parameter Name="Direccion" Mode="In" Type="String" />
+      <Parameter Name="Numero_Casa" Mode="In" Type="String" />
+      <Parameter Name="Numero_Celular" Mode="In" Type="String" />
+      <Parameter Name="Nombre_Licenciatura" Mode="In" Type="String" />
+      <Parameter Name="Institucion_Lic" Mode="In" Type="String" />
+      <Parameter Name="Periodo_Lic" Mode="In" Type="Int32" />
+      <Parameter Name="Año_Titulacion_Lic" Mode="In" Type="String" />
+      <Parameter Name="Nombre_Maestria" Mode="In" Type="String" />
+      <Parameter Name="Institucion_Mae" Mode="In" Type="String" />
+      <Parameter Name="Periodo_Mae" Mode="In" Type="Int32" />
+      <Parameter Name="Año_Titulacion_Mae" Mode="In" Type="String" />
+      <Parameter Name="Nombre_Doctorado" Mode="In" Type="String" />
+      <Parameter Name="Institucion_Doc" Mode="In" Type="String" />
+      <Parameter Name="Periodo_Doc" Mode="In" Type="Int32" />
+      <Parameter Name="Años_Titulacion_Doc" Mode="In" Type="String" />
+      <Parameter Name="Nombre_Especializacion" Mode="In" Type="String" />
+      <Parameter Name="Institucion_Espe" Mode="In" Type="String" />
+      <Parameter Name="Periodo_Espe" Mode="In" Type="Int32" />
+      <Parameter Name="Año_Titulacion_Espe" Mode="In" Type="String" />
+      <Parameter Name="Nombre_Curso" Mode="In" Type="String" />
+      <Parameter Name="Institucion_Curso" Mode="In" Type="String" />
+      <Parameter Name="Horas" Mode="In" Type="Int32" />
+      <Parameter Name="Fecha" Mode="In" Type="String" />
+      <Parameter Name="Idioma" Mode="In" Type="String" />
+      <Parameter Name="Habla" Mode="In" Type="String" />
+      <Parameter Name="Lee" Mode="In" Type="String" />
+      <Parameter Name="Escribe" Mode="In" Type="String" />
+      <Parameter Name="Dominio" Mode="In" Type="String" />
+      <Parameter Name="Actividad_Puesto" Mode="In" Type="String" />
+      <Parameter Name="Organizacion_Empresa" Mode="In" Type="String" />
+      <Parameter Name="Periodo" Mode="In" Type="String" />
+      <Parameter Name="Actividad_Puesto2" Mode="In" Type="String" />
+      <Parameter Name="Organizacion_Empresa2" Mode="In" Type="String" />
+      <Parameter Name="Periodo2" Mode="In" Type="String" />
+      <Parameter Name="Actividad_Puesto3" Mode="In" Type="String" />
+      <Parameter Name="Organizacion_Empresa3" Mode="In" Type="String" />
+      <Parameter Name="Periodo3" Mode="In" Type="String" />
+      <Parameter Name="Actividad_Puesto_Aca" Mode="In" Type="String" />
+      <Parameter Name="Institucion_Aca" Mode="In" Type="String" />
+      <Parameter Name="Periodo_Aca" Mode="In" Type="String" />
+      <Parameter Name="Actividad_Puesto_Aca2" Mode="In" Type="String" />
+      <Parameter Name="Institucion_Aca2" Mode="In" Type="String" />
+      <Parameter Name="Periodo_Aca2" Mode="In" Type="String" />
+      <Parameter Name="Actividad_Puesto_Aca3" Mode="In" Type="String" />
+      <Parameter Name="Institucion_Aca3" Mode="In" Type="String" />
+      <Parameter Name="Periodo_Aca3" Mode="In" Type="String" />
+      <Parameter Name="Ingenieria_Idustrial" Mode="In" Type="Int32" />
+      <Parameter Name="Ingenieria_Sistemas" Mode="In" Type="Int32" />
+      <Parameter Name="Tics" Mode="In" Type="Int32" />
+      <Parameter Name="Ingenieria_Gestion" Mode="In" Type="Int32" />
+      <Parameter Name="Ingenieria_Logistica" Mode="In" Type="Int32" />
+      <Parameter Name="Ingenieria_Industrial_Dis" Mode="In" Type="Int32" />
+      <Parameter Name="Contador" Mode="In" Type="Int32" />
+      <Parameter Name="Ingenieria_Mecatronica" Mode="In" Type="Int32" />
+      <Parameter Name="Ingenieria_Gestion_Dis" Mode="In" Type="Int32" />
+      <Parameter Name="Ingenieria_Administracion" Mode="In" Type="Int32" />
+      <Parameter Name="Nombre_Materia_Ant" Mode="In" Type="String" />
+      <Parameter Name="Carrera_Ant" Mode="In" Type="String" />
+      <Parameter Name="Semestre_Ant" Mode="In" Type="String" />
+      <Parameter Name="Nombre_Materia_Ant2" Mode="In" Type="String" />
+      <Parameter Name="Carrera_Ant2" Mode="In" Type="String" />
+      <Parameter Name="Semestre_Ant2" Mode="In" Type="String" />
+      <Parameter Name="Nombre_Materia_Ant3" Mode="In" Type="String" />
+      <Parameter Name="Carrera_Ant3" Mode="In" Type="String" />
+      <Parameter Name="Semestre_Ant3" Mode="In" Type="String" />
+      <Parameter Name="Nombre_Materia_Ant4" Mode="In" Type="String" />
+      <Parameter Name="Carrera_Ant4" Mode="In" Type="String" />
+      <Parameter Name="Semestre_Ant4" Mode="In" Type="String" />
+      <Parameter Name="Nombre_Materia_Ant5" Mode="In" Type="String" />
+      <Parameter Name="Carrera_Ant5" Mode="In" Type="String" />
+      <Parameter Name="Semestre_Ant5" Mode="In" Type="String" />
+      <Parameter Name="Nombre_Materia_Ant6" Mode="In" Type="String" />
+      <Parameter Name="Carrera_Ant6" Mode="In" Type="String" />
+      <Parameter Name="Semestre_Ant6" Mode="In" Type="String" />
+      <Parameter Name="Nombre_Materia_Ant7" Mode="In" Type="String" />
+      <Parameter Name="Carrera_Ant7" Mode="In" Type="String" />
+      <Parameter Name="Semestre_Ant7" Mode="In" Type="String" />
+      <Parameter Name="Nombre_Materia_Ant8" Mode="In" Type="String" />
+      <Parameter Name="Carrera_Ant8" Mode="In" Type="String" />
+      <Parameter Name="Semestre_Ant8" Mode="In" Type="String" />
+      <Parameter Name="Nombre_Materia_Ant9" Mode="In" Type="String" />
+      <Parameter Name="Carrera_Ant9" Mode="In" Type="String" />
+      <Parameter Name="Semestre_Ant9" Mode="In" Type="String" />
+      <Parameter Name="Nombre_Materia_Imp" Mode="In" Type="String" />
+      <Parameter Name="Carrera_Imp" Mode="In" Type="String" />
+      <Parameter Name="Semestre_Imp" Mode="In" Type="String" />
+      <Parameter Name="Nombre_Materia_Imp2" Mode="In" Type="String" />
+      <Parameter Name="Carrera_Imp2" Mode="In" Type="String" />
+      <Parameter Name="Semestre_Imp2" Mode="In" Type="String" />
+      <Parameter Name="Nombre_Materia_Imp3" Mode="In" Type="String" />
+      <Parameter Name="Carrera_Imp3" Mode="In" Type="String" />
+      <Parameter Name="Semestre_Imp3" Mode="In" Type="String" />
+      <Parameter Name="Nombre_Materia_Imp4" Mode="In" Type="String" />
+      <Parameter Name="Carrera_Imp4" Mode="In" Type="String" />
+      <Parameter Name="Semestre_Imp4" Mode="In" Type="String" />
+      <Parameter Name="Nombre_Materia_Imp5" Mode="In" Type="String" />
+      <Parameter Name="Carrera_Imp5" Mode="In" Type="String" />
+      <Parameter Name="Semestre_Imp5" Mode="In" Type="String" />
+      <Parameter Name="Nombre_Materia_Imp6" Mode="In" Type="String" />
+      <Parameter Name="Carrera_Imp6" Mode="In" Type="String" />
+      <Parameter Name="Semestre_Imp6" Mode="In" Type="String" />
+      <Parameter Name="Nombre_Materia_Imp7" Mode="In" Type="String" />
+      <Parameter Name="Carrera_Imp7" Mode="In" Type="String" />
+      <Parameter Name="Semestre_Imp7" Mode="In" Type="String" />
+      <Parameter Name="Nombre_Materia_Imp8" Mode="In" Type="String" />
+      <Parameter Name="Carrera_Imp8" Mode="In" Type="String" />
+      <Parameter Name="Semestre_Imp8" Mode="In" Type="String" />
+      <Parameter Name="Nombre_Materia_Imp9" Mode="In" Type="String" />
+      <Parameter Name="Carrera_Imp9" Mode="In" Type="String" />
+      <Parameter Name="Semestre_Imp9" Mode="In" Type="String" />
+      <Parameter Name="Nombre_Materia_Imp10" Mode="In" Type="String" />
+      <Parameter Name="Carrera_Imp10" Mode="In" Type="String" />
+      <Parameter Name="Semestre_Imp10" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="SP_Datos_Personales_Delete">
+      <Parameter Name="Id_Datos_Personales" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="SP_Datos_Personales_GetAll" ReturnType="Collection(DisponibilidadModel.SP_Datos_Personales_GetAll_Result)" />
+    <FunctionImport Name="SP_Datos_Personales_GetById" ReturnType="Collection(DisponibilidadModel.SP_Datos_Personales_GetById_Result)">
+      <Parameter Name="Id_Datos_Personales" Mode="In" Type="Int32" />
+    </FunctionImport>
+  </EntityContainer>
+  <ComplexType Name="SP_Datos_Personales_GetAll_Result">
+    <Property Type="Int32" Name="Id_Datos_Personales" Nullable="false" />
+    <Property Type="String" Name="Nombre" Nullable="false" MaxLength="25" />
+    <Property Type="String" Name="APaterno" Nullable="false" MaxLength="25" />
+    <Property Type="String" Name="AMaterno" Nullable="false" MaxLength="25" />
+    <Property Type="Int32" Name="Edad" Nullable="false" />
+    <Property Type="String" Name="Lugar_de_Nacimiento" Nullable="false" MaxLength="30" />
+    <Property Type="String" Name="Estado_Civil" Nullable="false" MaxLength="20" />
+    <Property Type="String" Name="CURP" Nullable="false" MaxLength="30" />
+    <Property Type="String" Name="Direccion" Nullable="false" MaxLength="100" />
+    <Property Type="String" Name="Numero_Casa" Nullable="true" MaxLength="20" />
+    <Property Type="String" Name="Numero_Celular" Nullable="true" MaxLength="20" />
+    <Property Type="String" Name="Nombre_Licenciatura" Nullable="true" MaxLength="25" />
+    <Property Type="String" Name="Institucion_Lic" Nullable="true" MaxLength="30" />
+    <Property Type="Int32" Name="Periodo_Lic" Nullable="true" />
+    <Property Type="String" Name="Año_Titulacion_Lic" Nullable="true" MaxLength="30" />
+    <Property Type="String" Name="Nombre_Maestria" Nullable="true" MaxLength="30" />
+    <Property Type="String" Name="Institucion_Mae" Nullable="true" MaxLength="30" />
+    <Property Type="Int32" Name="Periodo_Mae" Nullable="true" />
+    <Property Type="String" Name="Año_Titulacion_Mae" Nullable="true" MaxLength="30" />
+    <Property Type="String" Name="Nombre_Doctorado" Nullable="true" MaxLength="30" />
+    <Property Type="String" Name="Institucion_Doc" Nullable="true" MaxLength="30" />
+    <Property Type="Int32" Name="Periodo_Doc" Nullable="true" />
+    <Property Type="String" Name="Años_Titulacion_Doc" Nullable="true" MaxLength="30" />
+    <Property Type="String" Name="Nombre_Especializacion" Nullable="true" MaxLength="30" />
+    <Property Type="String" Name="Institucion_Espe" Nullable="true" MaxLength="30" />
+    <Property Type="Int32" Name="Periodo_Espe" Nullable="true" />
+    <Property Type="String" Name="Año_Titulacion_Espe" Nullable="true" MaxLength="30" />
+    <Property Type="String" Name="Nombre_Curso" Nullable="true" MaxLength="30" />
+    <Property Type="String" Name="Institucion_Curso" Nullable="true" MaxLength="30" />
+    <Property Type="Int32" Name="Horas" Nullable="true" />
+    <Property Type="String" Name="Fecha" Nullable="true" MaxLength="30" />
+    <Property Type="String" Name="Idioma" Nullable="true" MaxLength="30" />
+    <Property Type="String" Name="Habla" Nullable="true" MaxLength="30" />
+    <Property Type="String" Name="Lee" Nullable="true" MaxLength="30" />
+    <Property Type="String" Name="Escribe" Nullable="true" MaxLength="30" />
+    <Property Type="String" Name="Dominio" Nullable="true" MaxLength="30" />
+    <Property Type="String" Name="Actividad_Puesto" Nullable="false" MaxLength="30" />
+    <Property Type="String" Name="Organizacion_Empresa" Nullable="false" MaxLength="30" />
+    <Property Type="String" Name="Periodo" Nullable="false" MaxLength="30" />
+    <Property Type="String" Name="Actividad_Puesto2" Nullable="true" MaxLength="30" />
+    <Property Type="String" Name="Organizacion_Empresa2" Nullable="true" MaxLength="30" />
+    <Property Type="String" Name="Periodo2" Nullable="true" MaxLength="30" />
+    <Property Type="String" Name="Actividad_Puesto3" Nullable="true" MaxLength="30" />
+    <Property Type="String" Name="Organizacion_Empresa3" Nullable="true" MaxLength="30" />
+    <Property Type="String" Name="Periodo3" Nullable="true" MaxLength="30" />
+    <Property Type="String" Name="Actividad_Puesto_Aca" Nullable="false" MaxLength="30" />
+    <Property Type="String" Name="Institucion_Aca" Nullable="false" MaxLength="30" />
+    <Property Type="String" Name="Periodo_Aca" Nullable="false" MaxLength="30" />
+    <Property Type="String" Name="Actividad_Puesto_Aca2" Nullable="true" MaxLength="30" />
+    <Property Type="String" Name="Institucion_Aca2" Nullable="true" MaxLength="30" />
+    <Property Type="String" Name="Periodo_Aca2" Nullable="true" MaxLength="30" />
+    <Property Type="String" Name="Actividad_Puesto_Aca3" Nullable="true" MaxLength="30" />
+    <Property Type="String" Name="Institucion_Aca3" Nullable="true" MaxLength="30" />
+    <Property Type="String" Name="Periodo_Aca3" Nullable="true" MaxLength="30" />
+    <Property Type="Int32" Name="Ingenieria_Idustrial" Nullable="true" />
+    <Property Type="Int32" Name="Ingenieria_Sistemas" Nullable="true" />
+    <Property Type="Int32" Name="Tics" Nullable="true" />
+    <Property Type="Int32" Name="Ingenieria_Gestion" Nullable="true" />
+    <Property Type="Int32" Name="Ingenieria_Logistica" Nullable="true" />
+    <Property Type="Int32" Name="Ingenieria_Industrial_Dis" Nullable="true" />
+    <Property Type="Int32" Name="Contador" Nullable="true" />
+    <Property Type="Int32" Name="Ingenieria_Mecatronica" Nullable="true" />
+    <Property Type="Int32" Name="Ingenieria_Gestion_Dis" Nullable="true" />
+    <Property Type="Int32" Name="Ingenieria_Administracion" Nullable="true" />
+    <Property Type="String" Name="Nombre_Materia_Ant" Nullable="false" MaxLength="30" />
+    <Property Type="String" Name="Carrera_Ant" Nullable="false" MaxLength="30" />
+    <Property Type="String" Name="Semestre_Ant" Nullable="false" MaxLength="30" />
+    <Property Type="String" Name="Nombre_Materia_Ant2" Nullable="true" MaxLength="30" />
+    <Property Type="String" Name="Carrera_Ant2" Nullable="true" MaxLength="30" />
+    <Property Type="String" Name="Semestre_Ant2" Nullable="true" MaxLength="30" />
+    <Property Type="String" Name="Nombre_Materia_Ant3" Nullable="true" MaxLength="30" />
+    <Property Type="String" Name="Carrera_Ant3" Nullable="true" MaxLength="30" />
+    <Property Type="String" Name="Semestre_Ant3" Nullable="true" MaxLength="30" />
+    <Property Type="String" Name="Nombre_Materia_Ant4" Nullable="true" MaxLength="30" />
+    <Property Type="String" Name="Carrera_Ant4" Nullable="true" MaxLength="30" />
+    <Property Type="String" Name="Semestre_Ant4" Nullable="true" MaxLength="30" />
+    <Property Type="String" Name="Nombre_Materia_Ant5" Nullable="true" MaxLength="30" />
+    <Property Type="String" Name="Carrera_Ant5" Nullable="true" MaxLength="30" />
+    <Property Type="String" Name="Semestre_Ant5" Nullable="true" MaxLength="30" />
+    <Property Type="String" Name="Nombre_Materia_Ant6" Nullable="true" MaxLength="30" />
+    <Property Type="String" Name="Carrera_Ant6" Nullable="true" MaxLength="30" />
+    <Property Type="String" Name="Semestre_Ant6" Nullable="true" MaxLength="30" />
+    <Property Type="String" Name="Nombre_Materia_Ant7" Nullable="true" MaxLength="30" />
+    <Property Type="String" Name="Carrera_Ant7" Nullable="true" MaxLength="30" />
+    <Property Type="String" Name="Semestre_Ant7" Nullable="true" MaxLength="30" />
+    <Property Type="String" Name="Nombre_Materia_Ant8" Nullable="true" MaxLength="30" />
+    <Property Type="String" Name="Carrera_Ant8" Nullable="true" MaxLength="30" />
+    <Property Type="String" Name="Semestre_Ant8" Nullable="true" MaxLength="30" />
+    <Property Type="String" Name="Nombre_Materia_Ant9" Nullable="true" MaxLength="30" />
+    <Property Type="String" Name="Carrera_Ant9" Nullable="true" MaxLength="30" />
+    <Property Type="String" Name="Semestre_Ant9" Nullable="true" MaxLength="30" />
+    <Property Type="String" Name="Nombre_Materia_Imp" Nullable="true" MaxLength="30" />
+    <Property Type="String" Name="Carrera_Imp" Nullable="true" MaxLength="30" />
+    <Property Type="String" Name="Semestre_Imp" Nullable="true" MaxLength="30" />
+    <Property Type="String" Name="Nombre_Materia_Imp2" Nullable="true" MaxLength="30" />
+    <Property Type="String" Name="Carrera_Imp2" Nullable="true" MaxLength="30" />
+    <Property Type="String" Name="Semestre_Imp2" Nullable="true" MaxLength="30" />
+    <Property Type="String" Name="Nombre_Materia_Imp3" Nullable="true" MaxLength="30" />
+    <Property Type="String" Name="Carrera_Imp3" Nullable="true" MaxLength="30" />
+    <Property Type="String" Name="Semestre_Imp3" Nullable="true" MaxLength="30" />
+    <Property Type="String" Name="Nombre_Materia_Imp4" Nullable="true" MaxLength="30" />
+    <Property Type="String" Name="Carrera_Imp4" Nullable="true" MaxLength="30" />
+    <Property Type="String" Name="Semestre_Imp4" Nullable="true" MaxLength="30" />
+    <Property Type="String" Name="Nombre_Materia_Imp5" Nullable="true" MaxLength="30" />
+    <Property Type="String" Name="Carrera_Imp5" Nullable="true" MaxLength="30" />
+    <Property Type="String" Name="Semestre_Imp5" Nullable="true" MaxLength="30" />
+    <Property Type="String" Name="Nombre_Materia_Imp6" Nullable="true" MaxLength="30" />
+    <Property Type="String" Name="Carrera_Imp6" Nullable="true" MaxLength="30" />
+    <Property Type="String" Name="Semestre_Imp6" Nullable="true" MaxLength="30" />
+    <Property Type="String" Name="Nombre_Materia_Imp7" Nullable="true" MaxLength="30" />
+    <Property Type="String" Name="Carrera_Imp7" Nullable="true" MaxLength="30" />
+    <Property Type="String" Name="Semestre_Imp7" Nullable="true" MaxLength="30" />
+    <Property Type="String" Name="Nombre_Materia_Imp8" Nullable="true" MaxLength="30" />
+    <Property Type="String" Name="Carrera_Imp8" Nullable="true" MaxLength="30" />
+    <Property Type="String" Name="Semestre_Imp8" Nullable="true" MaxLength="30" />
+    <Property Type="String" Name="Nombre_Materia_Imp9" Nullable="true" MaxLength="30" />
+    <Property Type="String" Name="Carrera_Imp9" Nullable="true" MaxLength="30" />
+    <Property Type="String" Name="Semestre_Imp9" Nullable="true" MaxLength="30" />
+    <Property Type="String" Name="Nombre_Materia_Imp10" Nullable="true" MaxLength="30" />
+    <Property Type="String" Name="Carrera_Imp10" Nullable="true" MaxLength="30" />
+    <Property Type="String" Name="Semestre_Imp10" Nullable="true" MaxLength="30" />
+  </ComplexType>
+  <ComplexType Name="SP_Datos_Personales_GetById_Result">
+    <Property Type="String" Name="Nombre" Nullable="false" MaxLength="25" />
+    <Property Type="String" Name="APaterno" Nullable="false" MaxLength="25" />
+    <Property Type="String" Name="AMaterno" Nullable="false" MaxLength="25" />
+    <Property Type="Int32" Name="Edad" Nullable="false" />
+    <Property Type="String" Name="Lugar_de_Nacimiento" Nullable="false" MaxLength="30" />
+    <Property Type="String" Name="Estado_Civil" Nullable="false" MaxLength="20" />
+    <Property Type="String" Name="CURP" Nullable="false" MaxLength="30" />
+    <Property Type="String" Name="Direccion" Nullable="false" MaxLength="100" />
+    <Property Type="String" Name="Numero_Casa" Nullable="true" MaxLength="20" />
+    <Property Type="String" Name="Numero_Celular" Nullable="true" MaxLength="20" />
+    <Property Type="String" Name="Nombre_Licenciatura" Nullable="true" MaxLength="25" />
+    <Property Type="String" Name="Institucion_Lic" Nullable="true" MaxLength="30" />
+    <Property Type="Int32" Name="Periodo_Lic" Nullable="true" />
+    <Property Type="String" Name="Año_Titulacion_Lic" Nullable="true" MaxLength="30" />
+    <Property Type="String" Name="Nombre_Maestria" Nullable="true" MaxLength="30" />
+    <Property Type="String" Name="Institucion_Mae" Nullable="true" MaxLength="30" />
+    <Property Type="Int32" Name="Periodo_Mae" Nullable="true" />
+    <Property Type="String" Name="Año_Titulacion_Mae" Nullable="true" MaxLength="30" />
+    <Property Type="String" Name="Nombre_Doctorado" Nullable="true" MaxLength="30" />
+    <Property Type="String" Name="Institucion_Doc" Nullable="true" MaxLength="30" />
+    <Property Type="Int32" Name="Periodo_Doc" Nullable="true" />
+    <Property Type="String" Name="Años_Titulacion_Doc" Nullable="true" MaxLength="30" />
+    <Property Type="String" Name="Nombre_Especializacion" Nullable="true" MaxLength="30" />
+    <Property Type="String" Name="Institucion_Espe" Nullable="true" MaxLength="30" />
+    <Property Type="Int32" Name="Periodo_Espe" Nullable="true" />
+    <Property Type="String" Name="Año_Titulacion_Espe" Nullable="true" MaxLength="30" />
+    <Property Type="String" Name="Nombre_Curso" Nullable="true" MaxLength="30" />
+    <Property Type="String" Name="Institucion_Curso" Nullable="true" MaxLength="30" />
+    <Property Type="Int32" Name="Horas" Nullable="true" />
+    <Property Type="String" Name="Fecha" Nullable="true" MaxLength="30" />
+    <Property Type="String" Name="Idioma" Nullable="true" MaxLength="30" />
+    <Property Type="String" Name="Habla" Nullable="true" MaxLength="30" />
+    <Property Type="String" Name="Lee" Nullable="true" MaxLength="30" />
+    <Property Type="String" Name="Escribe" Nullable="true" MaxLength="30" />
+    <Property Type="String" Name="Dominio" Nullable="true" MaxLength="30" />
+    <Property Type="String" Name="Actividad_Puesto" Nullable="false" MaxLength="30" />
+    <Property Type="String" Name="Organizacion_Empresa" Nullable="false" MaxLength="30" />
+    <Property Type="String" Name="Periodo" Nullable="false" MaxLength="30" />
+    <Property Type="String" Name="Actividad_Puesto2" Nullable="true" MaxLength="30" />
+    <Property Type="String" Name="Organizacion_Empresa2" Nullable="true" MaxLength="30" />
+    <Property Type="String" Name="Periodo2" Nullable="true" MaxLength="30" />
+    <Property Type="String" Name="Actividad_Puesto3" Nullable="true" MaxLength="30" />
+    <Property Type="String" Name="Organizacion_Empresa3" Nullable="true" MaxLength="30" />
+    <Property Type="String" Name="Periodo3" Nullable="true" MaxLength="30" />
+    <Property Type="String" Name="Actividad_Puesto_Aca" Nullable="false" MaxLength="30" />
+    <Property Type="String" Name="Institucion_Aca" Nullable="false" MaxLength="30" />
+    <Property Type="String" Name="Periodo_Aca" Nullable="false" MaxLength="30" />
+    <Property Type="String" Name="Actividad_Puesto_Aca2" Nullable="true" MaxLength="30" />
+    <Property Type="String" Name="Institucion_Aca2" Nullable="true" MaxLength="30" />
+    <Property Type="String" Name="Periodo_Aca2" Nullable="true" MaxLength="30" />
+    <Property Type="String" Name="Actividad_Puesto_Aca3" Nullable="true" MaxLength="30" />
+    <Property Type="String" Name="Institucion_Aca3" Nullable="true" MaxLength="30" />
+    <Property Type="String" Name="Periodo_Aca3" Nullable="true" MaxLength="30" />
+    <Property Type="Int32" Name="Ingenieria_Idustrial" Nullable="true" />
+    <Property Type="Int32" Name="Ingenieria_Sistemas" Nullable="true" />
+    <Property Type="Int32" Name="Tics" Nullable="true" />
+    <Property Type="Int32" Name="Ingenieria_Gestion" Nullable="true" />
+    <Property Type="Int32" Name="Ingenieria_Logistica" Nullable="true" />
+    <Property Type="Int32" Name="Ingenieria_Industrial_Dis" Nullable="true" />
+    <Property Type="Int32" Name="Contador" Nullable="true" />
+    <Property Type="Int32" Name="Ingenieria_Mecatronica" Nullable="true" />
+    <Property Type="Int32" Name="Ingenieria_Gestion_Dis" Nullable="true" />
+    <Property Type="Int32" Name="Ingenieria_Administracion" Nullable="true" />
+    <Property Type="String" Name="Nombre_Materia_Ant" Nullable="false" MaxLength="30" />
+    <Property Type="String" Name="Carrera_Ant" Nullable="false" MaxLength="30" />
+    <Property Type="String" Name="Semestre_Ant" Nullable="false" MaxLength="30" />
+    <Property Type="String" Name="Nombre_Materia_Ant2" Nullable="true" MaxLength="30" />
+    <Property Type="String" Name="Carrera_Ant2" Nullable="true" MaxLength="30" />
+    <Property Type="String" Name="Semestre_Ant2" Nullable="true" MaxLength="30" />
+    <Property Type="String" Name="Nombre_Materia_Ant3" Nullable="true" MaxLength="30" />
+    <Property Type="String" Name="Carrera_Ant3" Nullable="true" MaxLength="30" />
+    <Property Type="String" Name="Semestre_Ant3" Nullable="true" MaxLength="30" />
+    <Property Type="String" Name="Nombre_Materia_Ant4" Nullable="true" MaxLength="30" />
+    <Property Type="String" Name="Carrera_Ant4" Nullable="true" MaxLength="30" />
+    <Property Type="String" Name="Semestre_Ant4" Nullable="true" MaxLength="30" />
+    <Property Type="String" Name="Nombre_Materia_Ant5" Nullable="true" MaxLength="30" />
+    <Property Type="String" Name="Carrera_Ant5" Nullable="true" MaxLength="30" />
+    <Property Type="String" Name="Semestre_Ant5" Nullable="true" MaxLength="30" />
+    <Property Type="String" Name="Nombre_Materia_Ant6" Nullable="true" MaxLength="30" />
+    <Property Type="String" Name="Carrera_Ant6" Nullable="true" MaxLength="30" />
+    <Property Type="String" Name="Semestre_Ant6" Nullable="true" MaxLength="30" />
+    <Property Type="String" Name="Nombre_Materia_Ant7" Nullable="true" MaxLength="30" />
+    <Property Type="String" Name="Carrera_Ant7" Nullable="true" MaxLength="30" />
+    <Property Type="String" Name="Semestre_Ant7" Nullable="true" MaxLength="30" />
+    <Property Type="String" Name="Nombre_Materia_Ant8" Nullable="true" MaxLength="30" />
+    <Property Type="String" Name="Carrera_Ant8" Nullable="true" MaxLength="30" />
+    <Property Type="String" Name="Semestre_Ant8" Nullable="true" MaxLength="30" />
+    <Property Type="String" Name="Nombre_Materia_Ant9" Nullable="true" MaxLength="30" />
+    <Property Type="String" Name="Carrera_Ant9" Nullable="true" MaxLength="30" />
+    <Property Type="String" Name="Semestre_Ant9" Nullable="true" MaxLength="30" />
+    <Property Type="String" Name="Nombre_Materia_Imp" Nullable="true" MaxLength="30" />
+    <Property Type="String" Name="Carrera_Imp" Nullable="true" MaxLength="30" />
+    <Property Type="String" Name="Semestre_Imp" Nullable="true" MaxLength="30" />
+    <Property Type="String" Name="Nombre_Materia_Imp2" Nullable="true" MaxLength="30" />
+    <Property Type="String" Name="Carrera_Imp2" Nullable="true" MaxLength="30" />
+    <Property Type="String" Name="Semestre_Imp2" Nullable="true" MaxLength="30" />
+    <Property Type="String" Name="Nombre_Materia_Imp3" Nullable="true" MaxLength="30" />
+    <Property Type="String" Name="Carrera_Imp3" Nullable="true" MaxLength="30" />
+    <Property Type="String" Name="Semestre_Imp3" Nullable="true" MaxLength="30" />
+    <Property Type="String" Name="Nombre_Materia_Imp4" Nullable="true" MaxLength="30" />
+    <Property Type="String" Name="Carrera_Imp4" Nullable="true" MaxLength="30" />
+    <Property Type="String" Name="Semestre_Imp4" Nullable="true" MaxLength="30" />
+    <Property Type="String" Name="Nombre_Materia_Imp5" Nullable="true" MaxLength="30" />
+    <Property Type="String" Name="Carrera_Imp5" Nullable="true" MaxLength="30" />
+    <Property Type="String" Name="Semestre_Imp5" Nullable="true" MaxLength="30" />
+    <Property Type="String" Name="Nombre_Materia_Imp6" Nullable="true" MaxLength="30" />
+    <Property Type="String" Name="Carrera_Imp6" Nullable="true" MaxLength="30" />
+    <Property Type="String" Name="Semestre_Imp6" Nullable="true" MaxLength="30" />
+    <Property Type="String" Name="Nombre_Materia_Imp7" Nullable="true" MaxLength="30" />
+    <Property Type="String" Name="Carrera_Imp7" Nullable="true" MaxLength="30" />
+    <Property Type="String" Name="Semestre_Imp7" Nullable="true" MaxLength="30" />
+    <Property Type="String" Name="Nombre_Materia_Imp8" Nullable="true" MaxLength="30" />
+    <Property Type="String" Name="Carrera_Imp8" Nullable="true" MaxLength="30" />
+    <Property Type="String" Name="Semestre_Imp8" Nullable="true" MaxLength="30" />
+    <Property Type="String" Name="Nombre_Materia_Imp9" Nullable="true" MaxLength="30" />
+    <Property Type="String" Name="Carrera_Imp9" Nullable="true" MaxLength="30" />
+    <Property Type="String" Name="Semestre_Imp9" Nullable="true" MaxLength="30" />
+    <Property Type="String" Name="Nombre_Materia_Imp10" Nullable="true" MaxLength="30" />
+    <Property Type="String" Name="Carrera_Imp10" Nullable="true" MaxLength="30" />
+    <Property Type="String" Name="Semestre_Imp10" Nullable="true" MaxLength="30" />
+  </ComplexType>
+</Schema>

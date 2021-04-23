@@ -1,0 +1,42 @@
+C:\Users\Lenovo\source\repos\Disponibilidad_Horario\DL\bin\Debug\DL.dll.config
+C:\Users\Lenovo\source\repos\Disponibilidad_Horario\DL\bin\Debug\DL.dll
+C:\Users\Lenovo\source\repos\Disponibilidad_Horario\DL\bin\Debug\DL.pdb
+C:\Users\Lenovo\source\repos\Disponibilidad_Horario\DL\bin\Debug\EntityFramework.dll
+C:\Users\Lenovo\source\repos\Disponibilidad_Horario\DL\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Lenovo\source\repos\Disponibilidad_Horario\DL\bin\Debug\ML.dll
+C:\Users\Lenovo\source\repos\Disponibilidad_Horario\DL\bin\Debug\ML.pdb
+C:\Users\Lenovo\source\repos\Disponibilidad_Horario\DL\bin\Debug\EntityFramework.xml
+C:\Users\Lenovo\source\repos\Disponibilidad_Horario\DL\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Lenovo\source\repos\Disponibilidad_Horario\DL\obj\Debug\DL.csprojAssemblyReference.cache
+C:\Users\Lenovo\source\repos\Disponibilidad_Horario\DL\obj\Debug\DL.csproj.CoreCompileInputs.cache
+C:\Users\Lenovo\source\repos\Disponibilidad_Horario\DL\obj\Debug\DL.csproj.CopyComplete
+C:\Users\Lenovo\source\repos\Disponibilidad_Horario\DL\obj\Debug\DL.dll
+C:\Users\Lenovo\source\repos\Disponibilidad_Horario\DL\obj\Debug\DL.pdb
+F:\Disponibilidad_Horario\DL\bin\Debug\DL.dll.config
+F:\Disponibilidad_Horario\DL\bin\Debug\DL.dll
+F:\Disponibilidad_Horario\DL\bin\Debug\DL.pdb
+F:\Disponibilidad_Horario\DL\bin\Debug\EntityFramework.dll
+F:\Disponibilidad_Horario\DL\bin\Debug\EntityFramework.SqlServer.dll
+F:\Disponibilidad_Horario\DL\bin\Debug\ML.dll
+F:\Disponibilidad_Horario\DL\bin\Debug\ML.pdb
+F:\Disponibilidad_Horario\DL\bin\Debug\EntityFramework.xml
+F:\Disponibilidad_Horario\DL\bin\Debug\EntityFramework.SqlServer.xml
+F:\Disponibilidad_Horario\DL\obj\Debug\DL.csprojAssemblyReference.cache
+F:\Disponibilidad_Horario\DL\obj\Debug\DL.csproj.CoreCompileInputs.cache
+F:\Disponibilidad_Horario\DL\obj\Debug\DL.csproj.CopyComplete
+F:\Disponibilidad_Horario\DL\obj\Debug\DL.dll
+F:\Disponibilidad_Horario\DL\obj\Debug\DL.pdb
+C:\Users\TESCI\Documents\Visual Studio 2019\Disponibilidad_Horario\DL\bin\Debug\DL.dll.config
+C:\Users\TESCI\Documents\Visual Studio 2019\Disponibilidad_Horario\DL\bin\Debug\DL.dll
+C:\Users\TESCI\Documents\Visual Studio 2019\Disponibilidad_Horario\DL\bin\Debug\DL.pdb
+C:\Users\TESCI\Documents\Visual Studio 2019\Disponibilidad_Horario\DL\bin\Debug\EntityFramework.dll
+C:\Users\TESCI\Documents\Visual Studio 2019\Disponibilidad_Horario\DL\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\TESCI\Documents\Visual Studio 2019\Disponibilidad_Horario\DL\bin\Debug\ML.dll
+C:\Users\TESCI\Documents\Visual Studio 2019\Disponibilidad_Horario\DL\bin\Debug\ML.pdb
+C:\Users\TESCI\Documents\Visual Studio 2019\Disponibilidad_Horario\DL\bin\Debug\EntityFramework.xml
+C:\Users\TESCI\Documents\Visual Studio 2019\Disponibilidad_Horario\DL\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\TESCI\Documents\Visual Studio 2019\Disponibilidad_Horario\DL\obj\Debug\DL.csprojAssemblyReference.cache
+C:\Users\TESCI\Documents\Visual Studio 2019\Disponibilidad_Horario\DL\obj\Debug\DL.csproj.CoreCompileInputs.cache
+C:\Users\TESCI\Documents\Visual Studio 2019\Disponibilidad_Horario\DL\obj\Debug\DL.csproj.CopyComplete
+C:\Users\TESCI\Documents\Visual Studio 2019\Disponibilidad_Horario\DL\obj\Debug\DL.dll
+C:\Users\TESCI\Documents\Visual Studio 2019\Disponibilidad_Horario\DL\obj\Debug\DL.pdb

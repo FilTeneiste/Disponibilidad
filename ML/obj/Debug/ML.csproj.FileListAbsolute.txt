@@ -1,0 +1,22 @@
+C:\Users\Lenovo\source\repos\Disponibilidad_Horario\ML\bin\Debug\ML.dll
+C:\Users\Lenovo\source\repos\Disponibilidad_Horario\ML\bin\Debug\ML.pdb
+C:\Users\Lenovo\source\repos\Disponibilidad_Horario\ML\obj\Debug\ML.csproj.CoreCompileInputs.cache
+C:\Users\Lenovo\source\repos\Disponibilidad_Horario\ML\obj\Debug\ML.dll
+C:\Users\Lenovo\source\repos\Disponibilidad_Horario\ML\obj\Debug\ML.pdb
+F:\Disponibilidad_Horario\ML\bin\Debug\ML.dll
+F:\Disponibilidad_Horario\ML\bin\Debug\ML.pdb
+F:\Disponibilidad_Horario\ML\obj\Debug\ML.csprojAssemblyReference.cache
+F:\Disponibilidad_Horario\ML\obj\Debug\ML.csproj.CoreCompileInputs.cache
+F:\Disponibilidad_Horario\ML\obj\Debug\ML.dll
+F:\Disponibilidad_Horario\ML\obj\Debug\ML.pdb
+C:\Users\TESCI\Documents\Visual Studio 2019\Disponibilidad_Horario\ML\bin\Debug\ML.dll
+C:\Users\TESCI\Documents\Visual Studio 2019\Disponibilidad_Horario\ML\bin\Debug\ML.pdb
+C:\Users\TESCI\Documents\Visual Studio 2019\Disponibilidad_Horario\ML\bin\Debug\System.Net.Http.Extensions.dll
+C:\Users\TESCI\Documents\Visual Studio 2019\Disponibilidad_Horario\ML\bin\Debug\System.Net.Http.Formatting.dll
+C:\Users\TESCI\Documents\Visual Studio 2019\Disponibilidad_Horario\ML\bin\Debug\System.Net.Http.Primitives.dll
+C:\Users\TESCI\Documents\Visual Studio 2019\Disponibilidad_Horario\ML\bin\Debug\Newtonsoft.Json.dll
+C:\Users\TESCI\Documents\Visual Studio 2019\Disponibilidad_Horario\ML\obj\Debug\ML.csproj.CoreCompileInputs.cache
+C:\Users\TESCI\Documents\Visual Studio 2019\Disponibilidad_Horario\ML\obj\Debug\ML.csproj.CopyComplete
+C:\Users\TESCI\Documents\Visual Studio 2019\Disponibilidad_Horario\ML\obj\Debug\ML.dll
+C:\Users\TESCI\Documents\Visual Studio 2019\Disponibilidad_Horario\ML\obj\Debug\ML.pdb
+C:\Users\TESCI\Documents\Visual Studio 2019\Disponibilidad_Horario\ML\obj\Debug\ML.csprojAssemblyReference.cache
